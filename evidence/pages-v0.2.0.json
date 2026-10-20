@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "checked_at": "2026-10-20T16:33:31.607627+00:00",
+  "source_commit": "bee88b72bb6f63a8484047cb53f8da5830f216f6",
+  "public_url": "https://samihalawa.github.io/licita-espana/",
+  "source": {
+    "branch": "main",
+    "path": "/docs"
+  },
+  "scope": "Anonymous HTTP and exact published-asset matching; responsive behavior tested separately.",
+  "checks": [
+    {
+      "url": "https://samihalawa.github.io/licita-espana/",
+      "http_status": 200,
+      "sha256": "c676fa2fba0516bce50e8e55534116e0d7162bcf7b6015101473d77cfbe744b2",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/licita-espana/demo.html",
+      "http_status": 200,
+      "sha256": "8239e62666b7c3ce636f77399470721a36cb874be2d1530adb5c9013924f6612",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/licita-espana/style.css",
+      "http_status": 200,
+      "sha256": "add71020320976e5631374baacaef51844820112f139eb17f59f846f25d7b8c6",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/licita-espana/site.js",
+      "http_status": 200,
+      "sha256": "59108e7d8efc8395bf2f34105b557e7468dfc1998902b92dd57bb20ed0ff8340",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/licita-espana/icon.png",
+      "http_status": 200,
+      "sha256": "f6ebcf130ef81b9fb5446c60e30ebf0110657c4c1fe11e3a7929a3cb8e4e4da7",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/licita-espana/preview.jpg",
+      "http_status": 200,
+      "sha256": "c472c98cbc1972ab108a05845ee715913aba6eeda357512b0effbe6e714dcb45",
+      "matches_source": true
+    }
+  ]
+}

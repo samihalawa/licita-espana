@@ -22,9 +22,11 @@ Encuentra licitaciones y convierte sus pliegos en una decisión documentada: req
 
 También: “Revisa estos pliegos y señala los requisitos, las pruebas que faltan y las cláusulas.”
 
-[Ver el informe de ejemplo](examples/demo.md) · [Código de la página del producto](docs/index.html) · [Flujo completo](skills/licita-espana/references/workflow.md)
+[Ver el informe de ejemplo](https://samihalawa.github.io/licita-espana/demo.html) · [Web y demostración](https://samihalawa.github.io/licita-espana/) · [Flujo completo](skills/licita-espana/references/workflow.md)
 
 La demostración es una **captura guardada de fuentes oficiales**, no una consulta actual. Conserva fecha, enlaces y alcance.
+
+[![Vista de Licita España](docs/preview.jpg)](https://samihalawa.github.io/licita-espana/)
 
 ## Instalar en Claude Code
 

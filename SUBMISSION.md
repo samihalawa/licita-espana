@@ -6,6 +6,10 @@ Repository: https://github.com/samihalawa/licita-espana
 
 Plugin at repository root. Stable identity: `licita-espana`.
 
+Public product page: https://samihalawa.github.io/licita-espana/
+
+Saved official-source report: https://samihalawa.github.io/licita-espana/demo.html
+
 ## Listing
 
 Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.

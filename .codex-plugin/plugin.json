@@ -13,7 +13,7 @@
     ],
     "logo": "./assets/icon.png",
     "composerIcon": "./assets/icon.png",
-    "websiteURL": "https://github.com/samihalawa/licita-espana/blob/main/README.md",
+    "websiteURL": "https://samihalawa.github.io/licita-espana/",
     "supportURL": "https://github.com/samihalawa/licita-espana/blob/main/SUPPORT.md",
     "privacyPolicyURL": "https://github.com/samihalawa/licita-espana/blob/main/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md"
@@ -35,5 +35,6 @@
     "cpv"
   ],
   "license": "MIT",
-  "skills": "./skills"
+  "skills": "./skills",
+  "homepage": "https://samihalawa.github.io/licita-espana/"
 }
