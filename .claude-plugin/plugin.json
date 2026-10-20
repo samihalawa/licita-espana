@@ -1,8 +1,8 @@
 {
   "name": "licita-espana",
   "displayName": "Licita España",
-  "version": "0.1.2",
-  "description": "Turn a Spanish public tender into a traceable opportunity brief and a clause-by-clause qualification checklist.",
+  "version": "0.2.0",
+  "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,8 +10,11 @@
   "license": "MIT",
   "keywords": [
     "spain",
-    "official-data",
-    "read-only"
+    "licitaciones",
+    "contratacion-publica",
+    "placsp",
+    "pymes",
+    "cpv"
   ],
   "homepage": "https://github.com/samihalawa/licita-espana/blob/main/README.md",
   "repository": "https://github.com/samihalawa/licita-espana",

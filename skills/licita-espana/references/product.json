@@ -1,0 +1,36 @@
+{
+  "name": "Licita España",
+  "promise": "Decide qué licitación merece tu tiempo.",
+  "audience": "Autónomos, pymes y consultoras que preparan ofertas públicas.",
+  "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
+  "short": "Licitaciones con criterio",
+  "source": "PLACSP",
+  "keywords": [
+    "licitaciones",
+    "contratacion-publica",
+    "placsp",
+    "pymes",
+    "cpv"
+  ],
+  "prompts": [
+    "Busca licitaciones de software y separa los plazos futuros de los ya vencidos.",
+    "Revisa estos pliegos y señala los requisitos, las pruebas que faltan y las cláusulas.",
+    "Enséñame un ejemplo antes de consultar datos actuales."
+  ],
+  "benefits": [
+    "Expediente, organismo, presupuesto y plazo, juntos.",
+    "Continúa sin perder coincidencias dentro de la página.",
+    "Prepara una matriz de requisitos con cláusula y evidencia."
+  ],
+  "critique": "Un aviso actualizado no es necesariamente una oportunidad abierta. El cursor anterior podía saltarse coincidencias y la primera experiencia era JSON sin contexto.",
+  "change": "Continuación dentro de la página, lectura explícita de plazos, filtro opcional por fecha e informe legible con fuentes.",
+  "limits": "Ventana acotada del feed de PLACSP, no todas las licitaciones españolas. No lee automáticamente los PDF ni presenta ofertas. La decisión requiere pliegos, correcciones y perfil oficial.",
+  "tool": "licita_search",
+  "args": {
+    "max_pages": 1,
+    "limit": 3
+  },
+  "extra": "Usa next_request para continuar y deduplica por id. deadline_from filtra fechas, no acredita que el procedimiento siga abierto. Lee los pliegos con las herramientas de documentos del anfitrión antes de decidir.",
+  "slug": "licita-espana",
+  "version": "0.2.0"
+}

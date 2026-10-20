@@ -1,7 +1,7 @@
 [
   {
     "name": "licita_search",
-    "signature": "(query: 'str' = '', cpv_prefix: 'str' = '', max_pages: 'int' = 1, limit: 'int' = 20, cursor: 'str' = '') -> 'dict[str, Any]'",
-    "description": "Search a bounded window of PLACSP's official Atom feed, not all Spanish tenders. Returns a continuation cursor and explicit coverage. Does not submit bids."
+    "signature": "(query: 'str' = '', cpv_prefix: 'str' = '', max_pages: 'int' = 1, limit: 'int' = 20, cursor: 'str' = '', offset: 'int' = 0, deadline_from: 'str' = '') -> 'dict[str, Any]'",
+    "description": "Search a bounded PLACSP feed window with lossless within-page continuation. Optional deadline_from filters dates, not legal application status."
   }
 ]

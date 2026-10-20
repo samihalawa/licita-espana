@@ -1,30 +1,38 @@
 {
   "interface": {
     "displayName": "Licita España",
-    "shortDescription": "Spanish tender evidence",
-    "longDescription": "Turn a Spanish public tender into a traceable opportunity brief and a clause-by-clause qualification checklist.\n\nIncludes a focused assistant workflow, official-source references, review examples and a Python 3.11+ read-only adapter. In ChatGPT, uses available native browsing/file tools; in Claude Code or Codex, the bundled scripts can retrieve official data directly when networking is permitted. No separate account, API key or publisher-hosted server is required for this skills release.\n\nNo exhaustive historical procurement index, private portal automation, digital signatures, bid submission, legal opinions or unattended monitoring. The parser returns document URLs; the host must read the actual documents before qualification.\n\nIndependent software by Sami Halawa. Not affiliated with Spanish public authorities.",
+    "shortDescription": "Licitaciones con criterio",
+    "longDescription": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.\n\nAutónomos, pymes y consultoras que preparan ofertas públicas. Expediente, organismo, presupuesto y plazo, juntos. Continúa sin perder coincidencias dentro de la página. Prepara una matriz de requisitos con cláusula y evidencia.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Los scripts requieren Python 3.11+ y red autorizada. En ChatGPT, se utilizan únicamente las herramientas nativas disponibles.\n\nVentana acotada del feed de PLACSP, no todas las licitaciones españolas. No lee automáticamente los PDF ni presenta ofertas. La decisión requiere pliegos, correcciones y perfil oficial.",
     "developerName": "Sami Halawa",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "Find recent Spanish software tenders and show exactly what was searched.",
-      "Review these tender documents and quote the clauses that determine eligibility."
+      "Busca licitaciones de software y separa los plazos futuros de los ya vencidos.",
+      "Revisa estos pliegos y señala los requisitos, las pruebas que faltan y las cláusulas.",
+      "Enséñame un ejemplo antes de consultar datos actuales."
     ],
     "logo": "./assets/icon.png",
-    "composerIcon": "./assets/icon.png"
+    "composerIcon": "./assets/icon.png",
+    "websiteURL": "https://github.com/samihalawa/licita-espana/blob/main/README.md",
+    "supportURL": "https://github.com/samihalawa/licita-espana/blob/main/SUPPORT.md",
+    "privacyPolicyURL": "https://github.com/samihalawa/licita-espana/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md"
   },
   "name": "licita-espana",
-  "version": "0.1.2",
-  "description": "Turn a Spanish public tender into a traceable opportunity brief and a clause-by-clause qualification checklist.",
+  "version": "0.2.0",
+  "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
   },
   "keywords": [
     "spain",
-    "official-data",
-    "read-only",
-    "licita-espana"
+    "claude-plugin",
+    "licitaciones",
+    "contratacion-publica",
+    "placsp",
+    "pymes",
+    "cpv"
   ],
   "license": "MIT",
   "skills": "./skills"

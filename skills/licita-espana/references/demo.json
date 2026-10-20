@@ -1,0 +1,133 @@
+{
+  "tool": "licita_search",
+  "arguments": {
+    "max_pages": 1,
+    "limit": 3
+  },
+  "captured_at": "2026-10-20T16:20:04.907119+00:00",
+  "note": "Saved public-source example, not a current query or user-owned record.",
+  "result": {
+    "ok": true,
+    "data": [
+      {
+        "id": "https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/20603356",
+        "title": "Mantenimiento integral de los centros de la Dirección Territorial Norte de Ibermutua",
+        "official_url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G7kd07zme8vIGlsa0Wad%2Bw%3D%3D",
+        "updated": "2026-10-19T20:07:11.908+02:00",
+        "reference": "CG-2026/3360/0010",
+        "status_code": "EV",
+        "authority": "Dirección General de IBERMUTUA, Mutua Colaboradora con la Seguridad Social nº 274",
+        "cpv": [
+          "50000000"
+        ],
+        "budget_excluding_tax": "44247",
+        "currency": "EUR",
+        "deadline_date": "2026-10-15",
+        "deadline_time": "12:00:00",
+        "deadline_assessment": {
+          "as_of": "2026-10-20",
+          "date_state": "past_end_date",
+          "start_date": null,
+          "end_date": "2026-10-15",
+          "eligibility_verified": false,
+          "portal_status_verified": false
+        },
+        "document_urls": [
+          "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=nyn/kvuQOaDOsUZKj7cu9dk255I7qVN9FqN7j36JjGqWzbRirbXdwsokL0bOwbp5f7pVclwDdfo/WzzSLpBRA2GPm/5PQCgKlZggp8gII6jVTD3T98KC0nSgQFM0q%2B5s",
+          "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=kSHlL6NMfsFhGF42fAGIvXPKxvkI0P8BI/Huqjso0EH8kLZcKCsXtYw%2B%2BlFgSPuTK5dT08/07juAXYqPg%2BwNeHRtXicV3LGt8NXYNHpVpzQ//q7NB2iMZvNyf0xrJmjt"
+        ]
+      },
+      {
+        "id": "https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/20715433",
+        "title": "Concesión del servicio de cafetería Comedor en la Escuela Politécnica de la Universidad de Extremadura",
+        "official_url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=NdD4GVJvg2zjHF5qKI4aaw%3D%3D",
+        "updated": "2026-10-19T19:59:36.846+02:00",
+        "reference": "CSP.021/2026",
+        "status_code": "PUB",
+        "authority": "Rectorado de la Universidad de Extremadura",
+        "cpv": [
+          "55330000"
+        ],
+        "budget_excluding_tax": "1000",
+        "currency": "EUR",
+        "deadline_date": "2026-11-16",
+        "deadline_time": "23:59:00",
+        "deadline_assessment": {
+          "as_of": "2026-10-20",
+          "date_state": "end_date_ahead_start_unverified",
+          "start_date": null,
+          "end_date": "2026-11-16",
+          "eligibility_verified": false,
+          "portal_status_verified": false
+        },
+        "document_urls": [
+          "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=hmYlW/Sgna0ZAGP9h0WlTA5wgopd9yuT/7I8yUMuKVsxuIa1hafIF4qQ8%2BoT4M3bZoK4J8y7TLFiArQlRygLv1l9ZWDPDSZU6VaVtgvtT9D3GVhXrFFqN7yFncy7YfRK",
+          "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=1uzAViQGq71KxYaWhraCKZOHWpf40IM/Q2w0OpBKqDAs3/i6RZK4HA24nOf3qGrHtyHhDJklXgc4R2J9nSDjPm5VBHszC98RLiEkAcTGMyB7QB3HKyQaFUExmUVQCerk"
+        ]
+      },
+      {
+        "id": "https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/20698234",
+        "title": "Obras de ejecución del \"Proyecto eléctrico de baja tensión para el alumbrado exterior del Muelle AZ3 del Puerto de Bilbao en el término municipal de Zierbena”.",
+        "official_url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ChPWii8YPoAkJPJS%2BPS9vg%3D%3D",
+        "updated": "2026-10-19T19:57:18.051+02:00",
+        "reference": "10793/2026",
+        "status_code": "PUB",
+        "authority": "Presidencia de la Autoridad Portuaria de Bilbao",
+        "cpv": [
+          "45316100",
+          "45311000",
+          "45315300"
+        ],
+        "budget_excluding_tax": "1399326.03",
+        "currency": "EUR",
+        "deadline_date": "2026-11-11",
+        "deadline_time": "19:00:00",
+        "deadline_assessment": {
+          "as_of": "2026-10-20",
+          "date_state": "end_date_ahead_start_unverified",
+          "start_date": null,
+          "end_date": "2026-11-11",
+          "eligibility_verified": false,
+          "portal_status_verified": false
+        },
+        "document_urls": [
+          "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=CzsUPTqb5lkU7lajMg5lPbvQawfB06nElr3RMPXjYMYq%2BJ4djq9XGlGAsk1v8yGFrGNfUzdCsv/vY0AEwWkpO91bLu42xqaRvJTjHlJXKlM//q7NB2iMZvNyf0xrJmjt"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+        "retrieved_at": "2026-10-20T16:20:02.232047+00:00",
+        "sha256": "3f32f93e0d0e2531afbdba9c5efde1385aeeafdee0e9f9b23da76e732a041a91",
+        "cache_hit": false
+      }
+    ],
+    "coverage": {
+      "pages_fetched": 1,
+      "entries_examined": 4,
+      "returned": 3,
+      "result_limit_reached": true,
+      "next_cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+      "next_offset": 3,
+      "next_request": {
+        "query": "",
+        "cpv_prefix": "",
+        "max_pages": 1,
+        "limit": 3,
+        "cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+        "offset": 3,
+        "deadline_from": ""
+      },
+      "unknown_deadlines_excluded": 0,
+      "deleted_ids_observed": 1,
+      "partial": false,
+      "exhaustive": false
+    },
+    "warnings": [
+      "Bounded feed window, not all Spanish tenders. A future deadline does not establish an open procedure; verify status, lots, amendments and the official profile.",
+      "Continuation preserves within-page matches. Live feed pages can change; deduplicate stable tender IDs across calls."
+    ],
+    "notice": "Independent software by Sami Halawa; not an official government service. Verify consequential decisions in the official source."
+  }
+}
