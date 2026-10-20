@@ -1,0 +1,19 @@
+{
+  "name": "licita-espana",
+  "owner": {
+    "name": "Sami Halawa",
+    "email": "sami@samihalawa.com"
+  },
+  "metadata": {
+    "description": "Turn a Spanish public tender into a traceable opportunity brief and a clause-by-clause qualification checklist.",
+    "version": "0.1.2"
+  },
+  "plugins": [
+    {
+      "name": "licita-espana",
+      "source": "./",
+      "description": "Turn a Spanish public tender into a traceable opportunity brief and a clause-by-clause qualification checklist.",
+      "version": "0.1.2"
+    }
+  ]
+}

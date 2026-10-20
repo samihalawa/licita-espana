@@ -1,0 +1,31 @@
+{
+  "interface": {
+    "displayName": "Licita España",
+    "shortDescription": "Spanish tender evidence",
+    "longDescription": "Turn a Spanish public tender into a traceable opportunity brief and a clause-by-clause qualification checklist.\n\nIncludes a focused assistant workflow, official-source references, review examples and a Python 3.11+ read-only adapter. In ChatGPT, uses available native browsing/file tools; in Claude Code or Codex, the bundled scripts can retrieve official data directly when networking is permitted. No separate account, API key or publisher-hosted server is required for this skills release.\n\nNo exhaustive historical procurement index, private portal automation, digital signatures, bid submission, legal opinions or unattended monitoring. The parser returns document URLs; the host must read the actual documents before qualification.\n\nIndependent software by Sami Halawa. Not affiliated with Spanish public authorities.",
+    "developerName": "Sami Halawa",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Find recent Spanish software tenders and show exactly what was searched.",
+      "Review these tender documents and quote the clauses that determine eligibility."
+    ],
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png"
+  },
+  "name": "licita-espana",
+  "version": "0.1.2",
+  "description": "Turn a Spanish public tender into a traceable opportunity brief and a clause-by-clause qualification checklist.",
+  "author": {
+    "name": "Sami Halawa",
+    "email": "sami@samihalawa.com"
+  },
+  "keywords": [
+    "spain",
+    "official-data",
+    "read-only",
+    "licita-espana"
+  ],
+  "license": "MIT",
+  "skills": "./skills"
+}

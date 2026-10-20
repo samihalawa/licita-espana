@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-20T15:38:46.694660+00:00",
+  "scope": "Bounded adapter smoke tests, not full historical coverage or model-based user acceptance.",
+  "passed": 0,
+  "total": 1,
+  "tests": [
+    {
+      "tool": "licita_search",
+      "arguments": {
+        "query": "",
+        "max_pages": 1,
+        "limit": 3
+      },
+      "ok": false,
+      "elapsed_seconds": 0.07,
+      "coverage": null,
+      "sources": [],
+      "error": {
+        "code": "source_unavailable",
+        "message": "The official source could not be reached; no result was inferred.",
+        "source_url": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom"
+      }
+    }
+  ]
+}
