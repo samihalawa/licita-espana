@@ -1,0 +1,55 @@
+{
+  "name": "licita-espana",
+  "checked_at": "2026-10-20T15:50:49.753642+00:00",
+  "source_commit": "e4fa9b5ee489881a709a2c4b3af993518b44ab4e",
+  "public_links": [
+    {
+      "field": "documentationUrl",
+      "url": "https://github.com/samihalawa/licita-espana/blob/main/README.md",
+      "anonymous_http_status": 200,
+      "content_sha256": "685184119572e52837ee5575e9c46913f0273bd7b1ebff576a59db6916bc1b7b"
+    },
+    {
+      "field": "supportUrl",
+      "url": "https://github.com/samihalawa/licita-espana/blob/main/SUPPORT.md",
+      "anonymous_http_status": 200,
+      "content_sha256": "cafebfd9182616aa1423fa17454cba7fc1994616219a8dac7607bf78c5ab9ac6"
+    },
+    {
+      "field": "privacyPolicyUrl",
+      "url": "https://github.com/samihalawa/licita-espana/blob/main/PRIVACY.md",
+      "anonymous_http_status": 200,
+      "content_sha256": "4486b4c0063ca085f5c5e6f2bc5afb96d51b18fdc7925ed9b67c9c8fde990ac9"
+    },
+    {
+      "field": "termsOfServiceUrl",
+      "url": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md",
+      "anonymous_http_status": 200,
+      "content_sha256": "a6c2ed312ba54b63f363f3777d6e4b685abfc2c1c11e345d3f805ebf96853d4c"
+    }
+  ],
+  "installation": [
+    {
+      "command": "claude plugin marketplace add https://github.com/samihalawa/licita-espana.git",
+      "exit_code": 0,
+      "output": "Adding marketplace…Refreshing marketplace cache (timeout: 120s)…\nCloning repository (timeout: 120s): https://github.com/samihalawa/licita-espana.git\nClone complete, validating marketplace…\nCleaning up old marketplace cache…\n✔ Successfully added marketplace: licita-espana (declared in user settings)\n"
+    },
+    {
+      "command": "claude plugin install licita-espana@licita-espana",
+      "exit_code": 0,
+      "output": "Installing plugin \"licita-espana@licita-espana\"...✔ Successfully installed plugin: licita-espana@licita-espana (scope: user)\n"
+    },
+    {
+      "command": "claude plugin list",
+      "exit_code": 0,
+      "output": "Installed plugins:\n\n  ❯ licita-espana@licita-espana\n    Version: 0.1.2\n    Scope: user\n    Status: ✔ enabled\n\n"
+    },
+    {
+      "command": "claude plugin details licita-espana",
+      "exit_code": 0,
+      "output": "Licita España (licita-espana) 0.1.2\n  Description: Turn a Spanish public tender into a traceable opportunity brief and a clause-by-clause qualification checklist.\n  Source: licita-espana@licita-espana\n\nComponent inventory\n  Skills (1)  licita-espana\n  Agents (0)\n  Hooks (0)\n  MCP servers (0)\n  LSP servers (0)\n\nProjected token cost\n  Always-on:   ~53 tok   added to every session\n\nPer-component (rounded)\n  component      always-on  on-invoke\n  licita-espana        ~50      ~1.4k\n\n  On-invoke cost is paid each time a skill or agent fires.\n  Token counts are estimates and may differ from actual usage.\n"
+    }
+  ],
+  "ok": true,
+  "scope": "Anonymous public-source installation and component discovery only; not a model-based task completion or Anthropic approval."
+}
