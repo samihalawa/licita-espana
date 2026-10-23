@@ -3,5 +3,10 @@
     "name": "licita_search",
     "signature": "(query: 'str' = '', cpv_prefix: 'str' = '', max_pages: 'int' = 1, limit: 'int' = 20, cursor: 'str' = '', offset: 'int' = 0, deadline_from: 'str' = '') -> 'dict[str, Any]'",
     "description": "Search a bounded PLACSP feed window with lossless within-page continuation. Optional deadline_from filters dates, not legal application status."
+  },
+  {
+    "name": "licita_triage",
+    "signature": "(query: 'str' = '', cpv_prefix: 'str' = '', max_pages: 'int' = 1, limit: 'int' = 15, cursor: 'str' = '', offset: 'int' = 0, deadline_from: 'str' = '') -> 'dict[str, Any]'",
+    "description": "Fast triage of one bounded official PLACSP feed window. A date bucket is not a bid/no-bid determination."
   }
 ]

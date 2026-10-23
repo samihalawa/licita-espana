@@ -1,0 +1,22 @@
+{
+  "version": "0.3.0",
+  "checked_at": "2026-10-23T08:51:59.983508+00:00",
+  "scope": "Current read-only requests using exact documented demo arguments. BOE/BORME dates are explicit historical query ranges. Does not validate production endpoint or infrastructure.",
+  "check": {
+    "slug": "licita-espana",
+    "tool": "licita_triage",
+    "arguments": {
+      "max_pages": 1,
+      "limit": 5
+    },
+    "ok": false,
+    "sources": [],
+    "coverage": null,
+    "error": {
+      "code": "response_too_large",
+      "message": "Official response exceeds the 8 MiB safety limit; narrow the query.",
+      "source_url": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom"
+    },
+    "duration_seconds": 36.07
+  }
+}

@@ -1,14 +1,10 @@
-# Claude review — Licita España 0.2.0
+# Claude review — Licita España 0.3.0
 
 Publisher: Sami Halawa · Contact: sami@samihalawa.com
 
 Repository: https://github.com/samihalawa/licita-espana
 
 Plugin at repository root. Stable identity: `licita-espana`.
-
-Public product page: https://samihalawa.github.io/licita-espana/
-
-Saved official-source report: https://samihalawa.github.io/licita-espana/demo.html
 
 ## Listing
 

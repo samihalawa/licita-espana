@@ -19,7 +19,7 @@
     "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md"
   },
   "name": "licita-espana",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
   "author": {
     "name": "Sami Halawa",

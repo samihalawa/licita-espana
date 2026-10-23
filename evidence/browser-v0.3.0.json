@@ -1,0 +1,115 @@
+{
+  "version": "0.3.0",
+  "checked_at": "2026-10-23T08:55:30.921968+00:00",
+  "scope": "Isolated local Chrome, archived source fixtures, external requests blocked; four viewport sizes and three pages. Not ChatGPT/Claude host acceptance.",
+  "checks": [
+    {
+      "slug": "licita-espana",
+      "view": "desktop",
+      "page": "index.html",
+      "width": 1440,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "desktop",
+      "page": "mcp-preview.html",
+      "width": 1440,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "desktop",
+      "page": "demo.html",
+      "width": 1440,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "tablet",
+      "page": "index.html",
+      "width": 768,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "tablet",
+      "page": "mcp-preview.html",
+      "width": 768,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "tablet",
+      "page": "demo.html",
+      "width": 768,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "mobile",
+      "page": "index.html",
+      "width": 390,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "mobile",
+      "page": "mcp-preview.html",
+      "width": 390,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "mobile",
+      "page": "demo.html",
+      "width": 390,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "small",
+      "page": "index.html",
+      "width": 320,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "small",
+      "page": "mcp-preview.html",
+      "width": 320,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    },
+    {
+      "slug": "licita-espana",
+      "view": "small",
+      "page": "demo.html",
+      "width": 320,
+      "http": 200,
+      "overflow": false,
+      "javascript_errors": 0
+    }
+  ]
+}

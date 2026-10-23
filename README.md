@@ -22,11 +22,9 @@ Encuentra licitaciones y convierte sus pliegos en una decisión documentada: req
 
 También: “Revisa estos pliegos y señala los requisitos, las pruebas que faltan y las cláusulas.”
 
-[Ver el informe de ejemplo](https://samihalawa.github.io/licita-espana/demo.html) · [Web y demostración](https://samihalawa.github.io/licita-espana/) · [Flujo completo](skills/licita-espana/references/workflow.md)
+[Ver el informe de ejemplo](examples/demo.md) · [Código de la página del producto](docs/index.html) · [Flujo completo](skills/licita-espana/references/workflow.md)
 
 La demostración es una **captura guardada de fuentes oficiales**, no una consulta actual. Conserva fecha, enlaces y alcance.
-
-[![Vista de Licita España](docs/preview.jpg)](https://samihalawa.github.io/licita-espana/)
 
 ## Instalar en Claude Code
 
@@ -55,7 +53,7 @@ python3 skills/licita-espana/scripts/run.py demo --format html --output ejemplo.
 ## Consultar y guardar un informe
 
 ```bash
-python3 skills/licita-espana/scripts/run.py report licita_search --json '{"max_pages": 1, "limit": 3}'
+python3 skills/licita-espana/scripts/run.py report licita_triage --json '{"max_pages": 1, "limit": 5}'
 ```
 
 Añade `--format html --output informe.html` o `--format json`. No se sobrescriben archivos por defecto. `doctor` comprueba el entorno local sin consultar proveedores.
@@ -86,3 +84,7 @@ claude plugin validate --strict .
 **English:** An independent workflow for Spanish official data, with a self-contained Python adapter, offline example and readable reports. Answer language follows the user.
 
 **Sami Halawa** · Software independiente; sin afiliación oficial. [Privacidad](PRIVACY.md) · [Condiciones](TERMS.md) · [Soporte](SUPPORT.md) · [Seguridad](SECURITY.md).
+
+## Disponibilidad de la fuente
+
+En la comprobación del 23 de octubre de 2026, la página Atom inicial de PLACSP superó el límite de lectura de 8 MiB. La consulta devuelve un error explícito; reducir `query`, `limit` o `max_pages` no reduce esa descarga. La demo histórica funciona sin conexión. Este resultado no acredita una búsqueda actual completa.

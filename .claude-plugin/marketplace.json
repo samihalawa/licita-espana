@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
       "name": "licita-espana",
       "source": "./",
       "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
-      "version": "0.2.0"
+      "version": "0.3.0"
     }
   ]
 }

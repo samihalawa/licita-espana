@@ -1,10 +1,10 @@
 {
-  "tool": "licita_search",
+  "tool": "licita_triage",
   "arguments": {
     "max_pages": 1,
-    "limit": 3
+    "limit": 5
   },
-  "captured_at": "2026-10-20T16:20:04.907119+00:00",
+  "captured_at": "2026-10-20T16:59:24.485456+00:00",
   "note": "Saved public-source example, not a current query or user-owned record.",
   "result": {
     "ok": true,
@@ -35,7 +35,9 @@
         "document_urls": [
           "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=nyn/kvuQOaDOsUZKj7cu9dk255I7qVN9FqN7j36JjGqWzbRirbXdwsokL0bOwbp5f7pVclwDdfo/WzzSLpBRA2GPm/5PQCgKlZggp8gII6jVTD3T98KC0nSgQFM0q%2B5s",
           "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=kSHlL6NMfsFhGF42fAGIvXPKxvkI0P8BI/Huqjso0EH8kLZcKCsXtYw%2B%2BlFgSPuTK5dT08/07juAXYqPg%2BwNeHRtXicV3LGt8NXYNHpVpzQ//q7NB2iMZvNyf0xrJmjt"
-        ]
+        ],
+        "review_bucket": "published_deadline_passed",
+        "next_action": "Check the current official contracting profile, all lots, PCAP/PPT, corrections and procedure status before deciding whether to bid."
       },
       {
         "id": "https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/20715433",
@@ -63,7 +65,9 @@
         "document_urls": [
           "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=hmYlW/Sgna0ZAGP9h0WlTA5wgopd9yuT/7I8yUMuKVsxuIa1hafIF4qQ8%2BoT4M3bZoK4J8y7TLFiArQlRygLv1l9ZWDPDSZU6VaVtgvtT9D3GVhXrFFqN7yFncy7YfRK",
           "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=1uzAViQGq71KxYaWhraCKZOHWpf40IM/Q2w0OpBKqDAs3/i6RZK4HA24nOf3qGrHtyHhDJklXgc4R2J9nSDjPm5VBHszC98RLiEkAcTGMyB7QB3HKyQaFUExmUVQCerk"
-        ]
+        ],
+        "review_bucket": "published_deadline_requires_verification",
+        "next_action": "Check the current official contracting profile, all lots, PCAP/PPT, corrections and procedure status before deciding whether to bid."
       },
       {
         "id": "https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/20698234",
@@ -92,41 +96,108 @@
         },
         "document_urls": [
           "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=CzsUPTqb5lkU7lajMg5lPbvQawfB06nElr3RMPXjYMYq%2BJ4djq9XGlGAsk1v8yGFrGNfUzdCsv/vY0AEwWkpO91bLu42xqaRvJTjHlJXKlM//q7NB2iMZvNyf0xrJmjt"
-        ]
+        ],
+        "review_bucket": "published_deadline_requires_verification",
+        "next_action": "Check the current official contracting profile, all lots, PCAP/PPT, corrections and procedure status before deciding whether to bid."
+      },
+      {
+        "id": "https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/20112566",
+        "title": "Obras de sustitución de cuadro general de baja tensión en el módulo 5 de la Facultad de Ciencias de la Universidad Autónoma de Madrid.",
+        "official_url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=EHrwlSeYu%2F%2FCfVQHDepjGQ%3D%3D",
+        "updated": "2026-10-19T19:37:38.884+02:00",
+        "reference": "O-5/26",
+        "status_code": "ADJ",
+        "authority": "Rectorado de la Universidad Autónoma de Madrid",
+        "cpv": [
+          "45315600"
+        ],
+        "budget_excluding_tax": "206779.13",
+        "currency": "EUR",
+        "deadline_date": "2026-09-07",
+        "deadline_time": "23:59:00",
+        "deadline_assessment": {
+          "as_of": "2026-10-20",
+          "date_state": "past_end_date",
+          "start_date": null,
+          "end_date": "2026-09-07",
+          "eligibility_verified": false,
+          "portal_status_verified": false
+        },
+        "document_urls": [
+          "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=pq6CPQlDlYPV9T2mdKdGdecLlHlCjlzI1323RpQgBX9LMLYDO68k7DFUgpFgGA4jf6e6JB6GB1z2NwlmqbN0RlA4EJP0hg7gjLn/aJfflbx7QB3HKyQaFUExmUVQCerk",
+          "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=fHxq0ezHvfaJj/60zYYMXX86yyxd/xrh4tP7hoHIY4Thk4TkWjkWsU1IVnXUlPjUxXuBxRirrRemLSrxyI7xwJTIDVOECYHa85JsH7jxSMiCx2e6p7hqtlp2aFupgHMr"
+        ],
+        "review_bucket": "published_deadline_passed",
+        "next_action": "Check the current official contracting profile, all lots, PCAP/PPT, corrections and procedure status before deciding whether to bid."
+      },
+      {
+        "id": "https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/17466224",
+        "title": "AM mantenimiento integral de los sistemas frigoríficos en buques apoyados por el Arsenal de Cádiz.",
+        "official_url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=O1JnqVF1KRFVYjgxA4nMUw%3D%3D",
+        "updated": "2026-10-19T19:34:38.477+02:00",
+        "reference": "2025/AR46U/00001045E",
+        "status_code": "RES",
+        "authority": "Intendente de Rota",
+        "cpv": [
+          "50640000"
+        ],
+        "budget_excluding_tax": "600000",
+        "currency": "EUR",
+        "deadline_date": "2025-07-14",
+        "deadline_time": "08:00:00",
+        "deadline_assessment": {
+          "as_of": "2026-10-20",
+          "date_state": "past_end_date",
+          "start_date": null,
+          "end_date": "2025-07-14",
+          "eligibility_verified": false,
+          "portal_status_verified": false
+        },
+        "document_urls": [
+          "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=HIn8j0VCKyVL6PwupnPY85h4HNmZWdPpnz58q9BiJGp6i6v3U9x0zbDY9q3JrLVgiyAjvyZ5uxFNTyWeHVfxhpSAFAbhErZ/G1g09J1qmRWCx2e6p7hqtlp2aFupgHMr&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D",
+          "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=3B1BxViaKPlt%2BCm1FjrytTWfmxr8pjLZ/9bDuIhyHpLv9/gTaZRPH6wHROMql1uvHy6/hb9H%2BKklz5aFdmO1bdUIGu1WAwBiAT98tgYV4XOCx2e6p7hqtlp2aFupgHMr&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D"
+        ],
+        "review_bucket": "published_deadline_passed",
+        "next_action": "Check the current official contracting profile, all lots, PCAP/PPT, corrections and procedure status before deciding whether to bid."
       }
     ],
     "sources": [
       {
         "url": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
-        "retrieved_at": "2026-10-20T16:20:02.232047+00:00",
+        "retrieved_at": "2026-10-20T16:59:09.400511+00:00",
         "sha256": "3f32f93e0d0e2531afbdba9c5efde1385aeeafdee0e9f9b23da76e732a041a91",
         "cache_hit": false
       }
     ],
     "coverage": {
       "pages_fetched": 1,
-      "entries_examined": 4,
-      "returned": 3,
+      "entries_examined": 6,
+      "returned": 5,
       "result_limit_reached": true,
       "next_cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
-      "next_offset": 3,
+      "next_offset": 5,
       "next_request": {
         "query": "",
         "cpv_prefix": "",
         "max_pages": 1,
-        "limit": 3,
+        "limit": 5,
         "cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
-        "offset": 3,
+        "offset": 5,
         "deadline_from": ""
       },
       "unknown_deadlines_excluded": 0,
       "deleted_ids_observed": 1,
       "partial": false,
-      "exhaustive": false
+      "exhaustive": false,
+      "buckets_in_returned_rows": {
+        "published_deadline_passed": 3,
+        "published_deadline_requires_verification": 2
+      }
     },
     "warnings": [
       "Bounded feed window, not all Spanish tenders. A future deadline does not establish an open procedure; verify status, lots, amendments and the official profile.",
-      "Continuation preserves within-page matches. Live feed pages can change; deduplicate stable tender IDs across calls."
+      "Continuation preserves within-page matches. Live feed pages can change; deduplicate stable tender IDs across calls.",
+      "These are date-based and unknown-status triage buckets, not confirmation that a call is open, that you qualify or that any filing was submitted."
     ],
     "notice": "Independent software by Sami Halawa; not an official government service. Verify consequential decisions in the official source."
   }

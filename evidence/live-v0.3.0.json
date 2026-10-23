@@ -1,0 +1,92 @@
+{
+  "version": "0.3.0",
+  "checked_at": "2026-10-20T16:59:24.493997+00:00",
+  "core_sha256": "303c3b3fd75b1544cf7120d5d37ef61f7d2445e508381af01ef8a25b6df6d530",
+  "scope": "Official-provider adapter smoke checks; not model-based task acceptance or adoption.",
+  "passed": 2,
+  "total": 2,
+  "tests": [
+    {
+      "tool": "licita_triage",
+      "arguments": {
+        "max_pages": 1,
+        "limit": 5
+      },
+      "ok": true,
+      "duration_seconds": 16.5,
+      "coverage": {
+        "pages_fetched": 1,
+        "entries_examined": 6,
+        "returned": 5,
+        "result_limit_reached": true,
+        "next_cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+        "next_offset": 5,
+        "next_request": {
+          "query": "",
+          "cpv_prefix": "",
+          "max_pages": 1,
+          "limit": 5,
+          "cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+          "offset": 5,
+          "deadline_from": ""
+        },
+        "unknown_deadlines_excluded": 0,
+        "deleted_ids_observed": 1,
+        "partial": false,
+        "exhaustive": false,
+        "buckets_in_returned_rows": {
+          "published_deadline_passed": 3,
+          "published_deadline_requires_verification": 2
+        }
+      },
+      "sources": [
+        {
+          "url": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+          "retrieved_at": "2026-10-20T16:59:09.400511+00:00",
+          "sha256": "3f32f93e0d0e2531afbdba9c5efde1385aeeafdee0e9f9b23da76e732a041a91",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "licita_search",
+      "arguments": {
+        "max_pages": 1,
+        "limit": 3
+      },
+      "ok": true,
+      "duration_seconds": 18.93,
+      "coverage": {
+        "pages_fetched": 1,
+        "entries_examined": 4,
+        "returned": 3,
+        "result_limit_reached": true,
+        "next_cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+        "next_offset": 3,
+        "next_request": {
+          "query": "",
+          "cpv_prefix": "",
+          "max_pages": 1,
+          "limit": 3,
+          "cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+          "offset": 3,
+          "deadline_from": ""
+        },
+        "unknown_deadlines_excluded": 0,
+        "deleted_ids_observed": 1,
+        "partial": false,
+        "exhaustive": false
+      },
+      "sources": [
+        {
+          "url": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+          "retrieved_at": "2026-10-20T16:59:20.528853+00:00",
+          "sha256": "3f32f93e0d0e2531afbdba9c5efde1385aeeafdee0e9f9b23da76e732a041a91",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    }
+  ]
+}
