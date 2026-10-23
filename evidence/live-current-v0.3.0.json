@@ -1,7 +1,7 @@
 {
   "version": "0.3.0",
-  "checked_at": "2026-10-23T08:51:59.983508+00:00",
-  "scope": "Current read-only requests using exact documented demo arguments. BOE/BORME dates are explicit historical query ranges. Does not validate production endpoint or infrastructure.",
+  "checked_at": "2026-10-23T09:12:20.030118+00:00",
+  "scope": "Current read-only requests using exact documented demo arguments. BOE/BORME dates are explicit historical query ranges. Bounded PLACSP responses explicitly preserve partial coverage. Does not validate production endpoint or infrastructure.",
   "check": {
     "slug": "licita-espana",
     "tool": "licita_triage",
@@ -9,14 +9,51 @@
       "max_pages": 1,
       "limit": 5
     },
-    "ok": false,
-    "sources": [],
-    "coverage": null,
-    "error": {
-      "code": "response_too_large",
-      "message": "Official response exceeds the 8 MiB safety limit; narrow the query.",
-      "source_url": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom"
+    "ok": true,
+    "returned": 5,
+    "sources": [
+      {
+        "url": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+        "retrieved_at": "2026-10-23T09:12:20.009838+00:00",
+        "sha256": "4097f2f31ae2dfc2aaaa4d59813bba63702e4df29367131c331075eb90a62302",
+        "cache_hit": false,
+        "complete": false,
+        "sha256_scope": "response_prefix",
+        "bytes_retained": 1048576,
+        "byte_limit": 8388608
+      }
+    ],
+    "coverage": {
+      "pages_fetched": 1,
+      "entries_examined": 6,
+      "returned": 5,
+      "result_limit_reached": true,
+      "next_cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+      "next_offset": 5,
+      "next_request": {
+        "query": "",
+        "cpv_prefix": "",
+        "max_pages": 1,
+        "limit": 5,
+        "cursor": "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+        "offset": 5,
+        "deadline_from": ""
+      },
+      "unknown_deadlines_excluded": 0,
+      "deleted_ids_observed": 2,
+      "partial": true,
+      "exhaustive": false,
+      "prefix_pages": [
+        "https://contrataciondelestado.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom"
+      ],
+      "older_page_cursor": null,
+      "continuation_blocked_reason": null,
+      "buckets_in_returned_rows": {
+        "published_deadline_requires_verification": 4,
+        "published_deadline_passed": 1
+      }
     },
-    "duration_seconds": 36.07
+    "error": null,
+    "duration_seconds": 4.94
   }
 }

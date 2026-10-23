@@ -85,6 +85,8 @@ claude plugin validate --strict .
 
 **Sami Halawa** · Software independiente; sin afiliación oficial. [Privacidad](PRIVACY.md) · [Condiciones](TERMS.md) · [Soporte](SUPPORT.md) · [Seguridad](SECURITY.md).
 
-## Disponibilidad de la fuente
+## Disponibilidad y cobertura de la fuente
 
-En la comprobación del 23 de octubre de 2026, la página Atom inicial de PLACSP superó el límite de lectura de 8 MiB. La consulta devuelve un error explícito; reducir `query`, `limit` o `max_pages` no reduce esa descarga. La demo histórica funciona sin conexión. Este resultado no acredita una búsqueda actual completa.
+Las páginas Atom de PLACSP pueden superar 8 MiB. El adaptador conserva el límite: usa una ventana inicial de hasta 1 MiB para limitar la latencia y solo procesa entradas XML completas dentro de ese prefijo y marca el resultado como parcial. La huella SHA-256 identifica los bytes del prefijo, no el documento completo. Los registros y las cancelaciones que quedan fuera no se han comprobado.
+
+`next_request` continúa entre las coincidencias observadas dentro del prefijo. Al llegar al final de los bytes comprobados, la continuación se detiene: no salta registros no leídos. Si aparece `older_page_cursor`, señala otra ventana anterior de la fuente, no una continuación exhaustiva. Una búsqueda sin coincidencias en este prefijo no acredita ausencia de licitaciones. Comprueba siempre el perfil oficial.
