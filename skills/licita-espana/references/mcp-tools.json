@@ -1,0 +1,155 @@
+{
+  "server": "licita-espana",
+  "version": "0.3.1",
+  "tools": [
+    {
+      "name": "licita_search",
+      "title": "licita search",
+      "description": "Search a bounded PLACSP window. Oversized pages expose complete prefix entries with explicit partial coverage; continuation never skips an unread suffix. Optional deadline_from filters dates, not legal application status.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "default": ""
+          },
+          "cpv_prefix": {
+            "type": "string",
+            "default": ""
+          },
+          "max_pages": {
+            "type": "integer",
+            "default": 1
+          },
+          "limit": {
+            "type": "integer",
+            "default": 20
+          },
+          "cursor": {
+            "type": "string",
+            "default": ""
+          },
+          "offset": {
+            "type": "integer",
+            "default": 0
+          },
+          "deadline_from": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "licita_triage",
+      "title": "licita triage",
+      "description": "Fast triage of one bounded official PLACSP feed window. A date bucket is not a bid/no-bid determination.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "default": ""
+          },
+          "cpv_prefix": {
+            "type": "string",
+            "default": ""
+          },
+          "max_pages": {
+            "type": "integer",
+            "default": 1
+          },
+          "limit": {
+            "type": "integer",
+            "default": 15
+          },
+          "cursor": {
+            "type": "string",
+            "default": ""
+          },
+          "offset": {
+            "type": "integer",
+            "default": 0
+          },
+          "deadline_from": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "licita_espana_demo",
+      "title": "Licita España · ejemplo guardado",
+      "description": "Read the bundled dated example without network access. It is historical, never live.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "licita_espana_report",
+      "title": "Licita España · informe",
+      "description": "Return a deterministic Markdown, HTML or JSON report for one product operation or the saved example. Writes no files; preserve source dates and partial coverage.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": [
+              "licita_search",
+              "licita_triage",
+              "licita_espana_demo"
+            ]
+          },
+          "arguments": {
+            "type": "object",
+            "default": {}
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "markdown",
+              "html",
+              "json"
+            ],
+            "default": "markdown"
+          }
+        },
+        "required": [
+          "operation"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    }
+  ]
+}

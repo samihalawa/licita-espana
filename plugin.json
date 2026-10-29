@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "licita-espana",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
   "author": {
     "name": "Sami Halawa",
@@ -22,7 +22,7 @@
       "interface": {
         "displayName": "Licita España",
         "shortDescription": "Licitaciones con criterio",
-        "longDescription": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.\n\nAutónomos, pymes y consultoras que preparan ofertas públicas. Expediente, organismo, presupuesto y plazo, juntos. Continúa sin perder coincidencias dentro de la página. Prepara una matriz de requisitos con cláusula y evidencia.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Los scripts requieren Python 3.11+ y red autorizada. En ChatGPT, se utilizan únicamente las herramientas nativas disponibles.\n\nVentana acotada del feed de PLACSP, no todas las licitaciones españolas. No lee automáticamente los PDF ni presenta ofertas. La decisión requiere pliegos, correcciones y perfil oficial.",
+        "longDescription": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.\n\nAutónomos, pymes y consultoras que preparan ofertas públicas. Expediente, organismo, presupuesto y plazo, juntos. Continúa sin perder coincidencias dentro de la página. Prepara una matriz de requisitos con cláusula y evidencia.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Claude Code invoca los adaptadores mediante el MCP local declarado (Python 3.11+ y red autorizada). Otros anfitriones utilizan únicamente sus herramientas nativas disponibles, sin ejecutar scripts como alternativa.\n\nVentana acotada del feed de PLACSP, no todas las licitaciones españolas. No lee automáticamente los PDF ni presenta ofertas. La decisión requiere pliegos, correcciones y perfil oficial.",
         "developerName": "Sami Halawa",
         "category": "Productivity",
         "capabilities": [],
@@ -34,9 +34,9 @@
         "logo": "./assets/icon.png",
         "composerIcon": "./assets/icon.png",
         "websiteURL": "https://samihalawa.github.io/licita-espana/",
-        "supportURL": "https://github.com/samihalawa/licita-espana/blob/main/SUPPORT.md",
-        "privacyPolicyURL": "https://github.com/samihalawa/licita-espana/blob/main/PRIVACY.md",
-        "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md"
+        "supportURL": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/SUPPORT.md",
+        "privacyPolicyURL": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/TERMS.md"
       }
     }
   },

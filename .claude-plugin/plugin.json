@@ -1,7 +1,7 @@
 {
   "name": "licita-espana",
   "displayName": "Licita España",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
   "author": {
     "name": "Sami Halawa",
@@ -19,8 +19,9 @@
   "homepage": "https://samihalawa.github.io/licita-espana/",
   "repository": "https://github.com/samihalawa/licita-espana",
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://github.com/samihalawa/licita-espana/blob/main/README.md",
-  "supportUrl": "https://github.com/samihalawa/licita-espana/blob/main/SUPPORT.md",
-  "privacyPolicyUrl": "https://github.com/samihalawa/licita-espana/blob/main/PRIVACY.md",
-  "termsOfServiceUrl": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md"
+  "documentationUrl": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/README.md",
+  "supportUrl": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/SUPPORT.md",
+  "privacyPolicyUrl": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/TERMS.md",
+  "mcpServers": "./.mcp.json"
 }

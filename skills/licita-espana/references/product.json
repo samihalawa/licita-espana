@@ -32,5 +32,5 @@
   },
   "extra": "Usa next_request para continuar y deduplica por id. deadline_from filtra fechas, no acredita que el procedimiento siga abierto. Lee los pliegos con las herramientas de documentos del anfitrión antes de decidir.",
   "slug": "licita-espana",
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
