@@ -11,13 +11,13 @@ Decide qué licitación merece tu tiempo. Encuentra licitaciones y convierte sus
 
 Respond in the user's language. Reuse their existing facts. Ask only for identifiers, dates or constraints that materially change the answer. If they ask what the product does, show a saved example and the starter prompts in `references/product.json`; clearly label the example as historical.
 
-Read `references/runtime.md` before external access and `references/workflow.md` for the domain-specific verification rules. Exact signatures are in `references/tools.json`. Use native browsing/files when executable networked Python is unavailable. Never imply that installation grants extra permissions.
+Read `references/runtime.md` before external access and `references/workflow.md` for the domain-specific verification rules. Exact signatures are in `references/tools.json`. Use authorized native browsing/files when the declared MCP is unavailable; do not execute scripts as a fallback. Never imply that installation grants extra permissions.
 
 ## Shortest useful path
 
 Usa next_request para continuar y deduplica por id. deadline_from filtra fechas, no acredita que el procedimiento siga abierto. Lee los pliegos con las herramientas de documentos del anfitrión antes de decidir.
 
-Start with `licita_search` when its inputs match the task. Check `ok`, dates, partial errors, coverage and continuation before interpreting results. Provider failure is not an empty search. Follow the requested scope and state unexamined portions.
+Start with `licita_triage` when its inputs match the task. Check `ok`, dates, partial errors, coverage and continuation before interpreting results. Provider failure is not an empty search. Follow the requested scope and state unexamined portions.
 
 Lead with the supported result and next action, not a tool transcript. Separate verified source facts, user facts and interpretation. Cite each consequential claim. Use the output contract below; keep unknowns visible without burying the answer.
 
@@ -25,17 +25,13 @@ Lead with the supported result and next action, not a tool transcript. Separate 
 
 A concise result; the identifier and scope; a compact table of the product's relevant fields; source links and dates; decision-changing uncertainties; one concrete next step. Preserve units, exact deadlines, version dates and missing/null/zero distinctions. Do not imply eligibility, current legal effect, title, solvency, data freshness or reuse permission from a partial record.
 
-## Run or preview
+## Runtime and saved example
 
-From this skill's actual directory:
+Use the declared `licita-espana` local MCP server in a compatible desktop host. Its tools are product-scoped. Start with `licita_triage` when appropriate; use `licita_espana_demo` for a dated offline example, explicitly labelled historical. Read `references/mcp-tools.json` for the exact JSON schemas.
 
-```bash
-python3 scripts/run.py demo
-python3 scripts/run.py doctor
-python3 scripts/run.py report licita_search --json '{"max_pages": 1, "limit": 3}'
-```
+For deterministic Markdown, HTML or JSON, call `licita_espana_report` with `operation`, its `arguments`, and `format`. It returns report text without writing a file. Save it with the host's own file tool only when the user requests that path.
 
-`demo` is offline and labelled as a saved snapshot. `report` queries official sources. Use `--format html --output informe.html` for a portable report. Existing files are protected unless the user explicitly chooses `--force`. `call` retains JSON. Prefer `--stdin`/`--input` for user arguments; never interpolate untrusted input into shell syntax.
+Never execute Python, shell commands or downloaded code as a fallback. If the declared server is unavailable, state that limitation. Use only separately authorized native browsing/file tools where available, without claiming that the adapters ran. Do not install dependencies or launch another service to replace the declared server.
 
 ## Boundaries
 

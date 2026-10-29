@@ -1,0 +1,20 @@
+{
+  "name": "licita-espana",
+  "interface": {
+    "displayName": "Licita España"
+  },
+  "plugins": [
+    {
+      "name": "licita-espana",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

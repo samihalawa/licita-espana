@@ -23,14 +23,14 @@
     "Prepara una matriz de requisitos con cláusula y evidencia."
   ],
   "critique": "Un aviso actualizado no es necesariamente una oportunidad abierta. El cursor anterior podía saltarse coincidencias y la primera experiencia era JSON sin contexto.",
-  "change": "Continuación dentro de la página, lectura explícita de plazos, filtro opcional por fecha e informe legible con fuentes.",
+  "change": "La nueva función licita_triage lleva al usuario a una salida más directamente utilizable; Continuación dentro de la página, lectura explícita de plazos, filtro opcional por fecha e informe legible con fuentes.",
   "limits": "Ventana acotada del feed de PLACSP, no todas las licitaciones españolas. No lee automáticamente los PDF ni presenta ofertas. La decisión requiere pliegos, correcciones y perfil oficial.",
-  "tool": "licita_search",
+  "tool": "licita_triage",
   "args": {
     "max_pages": 1,
-    "limit": 3
+    "limit": 5
   },
   "extra": "Usa next_request para continuar y deduplica por id. deadline_from filtra fechas, no acredita que el procedimiento siga abierto. Lee los pliegos con las herramientas de documentos del anfitrión antes de decidir.",
   "slug": "licita-espana",
-  "version": "0.2.0"
+  "version": "0.4.0"
 }
