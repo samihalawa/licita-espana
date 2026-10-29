@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!skills/
+!skills/licita-espana/
+!skills/licita-espana/scripts/
+!skills/licita-espana/scripts/**
+!skills/licita-espana/references/
+!skills/licita-espana/references/**
+!LICENSE
+!SECURITY.md
+!PRIVACY.md
+!SUPPORT.md
+**/__pycache__/
+**/*.pyc
