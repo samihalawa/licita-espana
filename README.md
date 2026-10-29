@@ -90,3 +90,9 @@ claude plugin validate --strict .
 Las páginas Atom de PLACSP pueden superar 8 MiB. El adaptador conserva el límite: usa una ventana inicial de hasta 1 MiB para limitar la latencia y solo procesa entradas XML completas dentro de ese prefijo y marca el resultado como parcial. La huella SHA-256 identifica los bytes del prefijo, no el documento completo. Los registros y las cancelaciones que quedan fuera no se han comprobado.
 
 `next_request` continúa entre las coincidencias observadas dentro del prefijo. Al llegar al final de los bytes comprobados, la continuación se detiene: no salta registros no leídos. Si aparece `older_page_cursor`, señala otra ventana anterior de la fuente, no una continuación exhaustiva. Una búsqueda sin coincidencias en este prefijo no acredita ausencia de licitaciones. Comprueba siempre el perfil oficial.
+
+## Datos enviados a servicios externos
+
+Las consultas en vivo envían únicamente los parámetros públicos necesarios de la consulta a los servicios oficiales identificados en [Fuentes y endpoints](skills/licita-espana/references/sources.md). El proveedor recibe esos parámetros y la dirección de red del entorno que ejecuta la consulta. No se envían credenciales, adjuntos, perfiles personales ni el historial de conversación. Estos accesos se realizan desde las herramientas autorizadas del anfitrión o los adaptadores Python locales; este paquete no declara un conector MCP alojado.
+
+Las respuestas oficiales pueden contener nombres, direcciones u otros datos personales públicos. La caché local es solo de memoria, durante un máximo de cinco minutos mientras se ejecuta el proceso. Los resultados pueden permanecer en la conversación o en informes guardados explícitamente por el usuario; su conservación depende del anfitrión y del usuario. El editor no opera un servicio que reciba o almacene estos datos. Consulta [Privacidad](PRIVACY.md) para los detalles y los límites de reutilización.
