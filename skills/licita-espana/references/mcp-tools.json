@@ -1,6 +1,6 @@
 {
   "server": "licita-espana",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "tools": [
     {
       "name": "licita_search",

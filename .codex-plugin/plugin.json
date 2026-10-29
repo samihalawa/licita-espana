@@ -1,17 +1,16 @@
 {
   "interface": {
     "displayName": "Licita España",
-    "shortDescription": "Licitaciones con criterio",
-    "longDescription": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.\n\nAutónomos, pymes y consultoras que preparan ofertas públicas. Expediente, organismo, presupuesto y plazo, juntos. Continúa sin perder coincidencias dentro de la página. Prepara una matriz de requisitos con cláusula y evidencia.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Claude Code invoca los adaptadores mediante el MCP local declarado (Python 3.11+ y red autorizada). Otros anfitriones utilizan únicamente sus herramientas nativas disponibles, sin ejecutar scripts como alternativa.\n\nVentana acotada del feed de PLACSP, no todas las licitaciones españolas. No lee automáticamente los PDF ni presenta ofertas. La decisión requiere pliegos, correcciones y perfil oficial.",
+    "shortDescription": "Triage Spanish public tenders",
+    "longDescription": "Triage published Spanish tenders by deadline, classification and official source, with explicit partial-feed coverage.\n\nUse bounded read-only official-source queries, a clearly dated offline example, and source-linked Markdown, HTML or JSON reports. Review returned dates, identifiers, provenance, errors and unexamined coverage before acting. No official affiliation, eligibility, legal, title, solvency or reuse-rights certification is claimed.\n\nRuns a bundled local stdio MCP on compatible desktop hosts with Python 3.11+ and authorized network access. No API key, account, dependency installation, hosted publisher service, telemetry or purchase functionality is provided. Reports return text without writing files. An unavailable local server is disclosed; scripts are never an execution fallback. This package does not create a web/mobile remote connection. Oversized PLACSP pages use a bounded prefix; results and continuation are explicitly incomplete, and zero prefix matches are never an exhaustive empty search.",
     "developerName": "Sami Halawa",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "Busca licitaciones de software y separa los plazos futuros de los ya vencidos.",
-      "Revisa estos pliegos y señala los requisitos, las pruebas que faltan y las cláusulas.",
-      "Enséñame un ejemplo antes de consultar datos actuales."
+      "Find recent Spanish software tenders and show exactly what was searched.",
+      "Review these tender documents and quote the clauses that determine eligibility."
     ],
-    "logo": "./assets/icon.png",
+    "logo": "./assets/logo.png",
     "composerIcon": "./assets/icon.png",
     "websiteURL": "https://samihalawa.github.io/licita-espana/",
     "supportURL": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/SUPPORT.md",
@@ -19,7 +18,7 @@
     "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/TERMS.md"
   },
   "name": "licita-espana",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
   "author": {
     "name": "Sami Halawa",
@@ -36,5 +35,7 @@
   ],
   "license": "MIT",
   "skills": "./skills",
-  "homepage": "https://samihalawa.github.io/licita-espana/"
+  "homepage": "https://samihalawa.github.io/licita-espana/",
+  "requires_local_executor": true,
+  "mcpServers": "./mcp.json"
 }
