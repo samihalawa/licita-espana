@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "licita-espana": {
+      "type": "http",
+      "url": "https://aiplugins.megawebs.com/mcp/licita-espana"
+    }
+  }
+}

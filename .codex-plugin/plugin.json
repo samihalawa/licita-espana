@@ -2,7 +2,7 @@
   "interface": {
     "displayName": "Licita España",
     "shortDescription": "Triage Spanish public tenders",
-    "longDescription": "Triage published Spanish tenders by deadline, classification and official source, with explicit partial-feed coverage.\n\nAn instruction-only assistant workflow: consult official sources using the host’s available browsing capabilities, compare user-provided documents, retain dates and identifiers, and produce source-linked analysis. A labelled historical example is included.\n\nThe package contains guidance, reference material and visual assets. Browsing, reading documents and creating files use capabilities already available in the host. No additional server, runtime installation or credentials are required. Source access and complete coverage must be verified for each task; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
+    "longDescription": "Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
     "developerName": "Sami Halawa",
     "category": "Productivity",
     "capabilities": [],
@@ -18,8 +18,8 @@
     "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md"
   },
   "name": "licita-espana",
-  "version": "0.5.0",
-  "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
+  "version": "0.6.0",
+  "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"

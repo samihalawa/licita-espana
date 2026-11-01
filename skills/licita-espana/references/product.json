@@ -2,7 +2,7 @@
   "name": "Licita España",
   "promise": "Decide qué licitación merece tu tiempo.",
   "audience": "Autónomos, pymes y consultoras que preparan ofertas públicas.",
-  "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
+  "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
   "short": "Licitaciones con criterio",
   "source": "PLACSP",
   "keywords": [
@@ -24,7 +24,7 @@
   ],
   "limits": "La cobertura depende de las páginas y documentos realmente revisados; no se garantiza incluir todas las licitaciones españolas. Una actualización reciente o una fecha futura no acredita un procedimiento abierto. No firma ni presenta ofertas.",
   "slug": "licita-espana",
-  "version": "0.5.0",
-  "guidance": "Busca en PLACSP y en el perfil oficial las oportunidades pertinentes; contrasta anuncio, pliegos, lotes y correcciones antes de recomendar una decisión.",
-  "mode": "instructions-only"
+  "version": "0.6.0",
+  "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real.",
+  "mode": "hosted-read-only-mcp-with-guidance"
 }

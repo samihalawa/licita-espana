@@ -5,15 +5,15 @@
     "email": "sami@samihalawa.com"
   },
   "metadata": {
-    "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
-    "version": "0.5.0"
+    "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
+    "version": "0.6.0"
   },
   "plugins": [
     {
       "name": "licita-espana",
       "source": "./",
-      "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
-      "version": "0.5.0"
+      "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
+      "version": "0.6.0"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "licita-espana",
-  "version": "0.5.0",
-  "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
+  "version": "0.6.0",
+  "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -22,7 +22,7 @@
       "interface": {
         "displayName": "Licita España",
         "shortDescription": "Triage Spanish public tenders",
-        "longDescription": "Triage published Spanish tenders by deadline, classification and official source, with explicit partial-feed coverage.\n\nAn instruction-only assistant workflow: consult official sources using the host’s available browsing capabilities, compare user-provided documents, retain dates and identifiers, and produce source-linked analysis. A labelled historical example is included.\n\nThe package contains guidance, reference material and visual assets. Browsing, reading documents and creating files use capabilities already available in the host. No additional server, runtime installation or credentials are required. Source access and complete coverage must be verified for each task; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
+        "longDescription": "Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
         "developerName": "Sami Halawa",
         "category": "Productivity",
         "capabilities": [],
@@ -39,19 +39,67 @@
       },
       "review": {
         "prompts": [
-          "Busca licitaciones de software y separa los plazos futuros de los ya vencidos.",
-          "Revisa estos pliegos y señala los requisitos, las pruebas que faltan y las cláusulas.",
-          "Enséñame un ejemplo antes de consultar datos actuales."
+          "Busca licitaciones de software con una página y seis resultados como máximo.",
+          "Busca formación en el feed de PLACSP y muestra qué páginas se revisaron.",
+          "Busca software por CPV 72 y devuelve cinco resultados como máximo."
         ],
         "commerce": false,
-        "commerce_description": "Instruction-only guidance; no checkout, payment or purchase functionality."
+        "commerce_description": "Read-only official-source queries and assistant guidance; no checkout, payment or purchase functionality.",
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 1.",
+              "prompt": "Busca licitaciones de software con una página y seis resultados como máximo.",
+              "tools_triggered": "find_spanish_public_tenders",
+              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+            },
+            {
+              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 2.",
+              "prompt": "Busca formación en el feed de PLACSP y muestra qué páginas se revisaron.",
+              "tools_triggered": "find_spanish_public_tenders",
+              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+            },
+            {
+              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 3.",
+              "prompt": "Busca software por CPV 72 y devuelve cinco resultados como máximo.",
+              "tools_triggered": "find_spanish_public_tenders",
+              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+            },
+            {
+              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 4.",
+              "prompt": "Consulta dos páginas de PLACSP sobre consultoría y explica la continuación pendiente.",
+              "tools_triggered": "find_spanish_public_tenders",
+              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+            },
+            {
+              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 5.",
+              "prompt": "Busca software con plazo desde 2026-11-01 y conserva los enlaces oficiales.",
+              "tools_triggered": "find_spanish_public_tenders",
+              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_public_tenders or claiming completion.",
+              "prompt": "Presenta una oferta firmada por mí."
+            },
+            {
+              "description": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_public_tenders or claiming completion.",
+              "prompt": "Garantiza que cumplo todos los requisitos de esta licitación."
+            },
+            {
+              "description": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_public_tenders or claiming completion.",
+              "prompt": "Activa vigilancia automática y envíame alertas cada día."
+            }
+          ]
+        }
       },
       "publication": {
-        "release_notes": "0.5.0 converts the plugin to instruction-only guidance and references. Removes the local MCP, executable adapters and runtime requirements while preserving product identity, official-source workflows, historical examples and generated Spanish-flag icons.",
+        "release_notes": "0.6.0 adds a scoped hosted read-only MCP connector and keeps complementary instructions, official-source provenance and labelled historical examples. Earlier 0.5.0 instruction-only history is preserved. No local runtime is installed.",
         "translations": {
           "es-ES": {
             "subtitle": "Licitaciones con criterio",
-            "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.\n\nGuía de instrucciones para consultar fuentes oficiales con las capacidades disponibles del asistente y analizar documentos aportados por el usuario. Conserva fechas, identificadores, enlaces y límites de cobertura. Incluye un ejemplo histórico claramente identificado.\n\nNo requiere instalar servidores, Python ni herramientas propias. La navegación y la creación de archivos dependen del anfitrión. No implica afiliación oficial ni garantiza resultados o conclusiones jurídicas."
+            "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.\n\nConector MCP alojado para consultas públicas de solo lectura, con instrucciones complementarias para revisar fuentes y documentos. Conserva fechas, identificadores, enlaces y límites. No requiere Python local ni claves del editor. No presenta trámites, firma, compra, accede a datos protegidos ni activa vigilancia. Los ejemplos guardados son históricos."
           }
         }
       }

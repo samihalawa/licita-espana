@@ -1,0 +1,82 @@
+{
+  "version": "0.6.0",
+  "endpoint": "https://aiplugins.megawebs.com/mcp/licita-espana",
+  "status": "not_run",
+  "scope": "Input mapping for real scoped MCP calls. Direct protocol execution proves tool behavior only; semantic no-tool negative cases require an actual assistant session. Repeated arguments deliberately assess distinct output interpretation, not additional unique runtime inputs.",
+  "positive": [
+    {
+      "id": "positive-1",
+      "prompt": "Busca licitaciones de software con una página y seis resultados como máximo.",
+      "tool": "find_spanish_public_tenders",
+      "arguments": {
+        "query": "software",
+        "max_pages": 1,
+        "limit": 6
+      },
+      "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+    },
+    {
+      "id": "positive-2",
+      "prompt": "Busca formación en el feed de PLACSP y muestra qué páginas se revisaron.",
+      "tool": "find_spanish_public_tenders",
+      "arguments": {
+        "query": "formación"
+      },
+      "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+    },
+    {
+      "id": "positive-3",
+      "prompt": "Busca software por CPV 72 y devuelve cinco resultados como máximo.",
+      "tool": "find_spanish_public_tenders",
+      "arguments": {
+        "query": "software",
+        "cpv_prefix": "72",
+        "limit": 5
+      },
+      "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+    },
+    {
+      "id": "positive-4",
+      "prompt": "Consulta dos páginas de PLACSP sobre consultoría y explica la continuación pendiente.",
+      "tool": "find_spanish_public_tenders",
+      "arguments": {
+        "query": "consultoría",
+        "max_pages": 2
+      },
+      "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+    },
+    {
+      "id": "positive-5",
+      "prompt": "Busca software con plazo desde 2026-11-01 y conserva los enlaces oficiales.",
+      "tool": "find_spanish_public_tenders",
+      "arguments": {
+        "query": "software",
+        "deadline_from": "2026-11-01"
+      },
+      "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+    }
+  ],
+  "negative": [
+    {
+      "id": "negative-1",
+      "prompt": "Presenta una oferta firmada por mí.",
+      "prohibited_tool": "find_spanish_public_tenders",
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_public_tenders or claiming completion.",
+      "status": "not_run"
+    },
+    {
+      "id": "negative-2",
+      "prompt": "Garantiza que cumplo todos los requisitos de esta licitación.",
+      "prohibited_tool": "find_spanish_public_tenders",
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_public_tenders or claiming completion.",
+      "status": "not_run"
+    },
+    {
+      "id": "negative-3",
+      "prompt": "Activa vigilancia automática y envíame alertas cada día.",
+      "prohibited_tool": "find_spanish_public_tenders",
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_public_tenders or claiming completion.",
+      "status": "not_run"
+    }
+  ]
+}
