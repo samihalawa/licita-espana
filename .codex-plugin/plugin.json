@@ -2,7 +2,7 @@
   "interface": {
     "displayName": "Licita España",
     "shortDescription": "Triage Spanish public tenders",
-    "longDescription": "Triage published Spanish tenders by deadline, classification and official source, with explicit partial-feed coverage.\n\nUse bounded read-only official-source queries, a clearly dated offline example, and source-linked Markdown, HTML or JSON reports. Review returned dates, identifiers, provenance, errors and unexamined coverage before acting. No official affiliation, eligibility, legal, title, solvency or reuse-rights certification is claimed.\n\nRuns a bundled local stdio MCP on compatible desktop hosts with Python 3.11+ and authorized network access. No API key, account, dependency installation, hosted publisher service, telemetry or purchase functionality is provided. Reports return text without writing files. An unavailable local server is disclosed; scripts are never an execution fallback. This package does not create a web/mobile remote connection. Oversized PLACSP pages use a bounded prefix; results and continuation are explicitly incomplete, and zero prefix matches are never an exhaustive empty search.",
+    "longDescription": "Triage published Spanish tenders by deadline, classification and official source, with explicit partial-feed coverage.\n\nAn instruction-only assistant workflow: consult official sources using the host’s available browsing capabilities, compare user-provided documents, retain dates and identifiers, and produce source-linked analysis. A labelled historical example is included.\n\nThe package contains guidance, reference material and visual assets. Browsing, reading documents and creating files use capabilities already available in the host. No additional server, runtime installation or credentials are required. Source access and complete coverage must be verified for each task; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
     "developerName": "Sami Halawa",
     "category": "Productivity",
     "capabilities": [],
@@ -13,12 +13,12 @@
     "logo": "./assets/logo.png",
     "composerIcon": "./assets/icon.png",
     "websiteURL": "https://samihalawa.github.io/licita-espana/",
-    "supportURL": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/SUPPORT.md",
-    "privacyPolicyURL": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/PRIVACY.md",
-    "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/release/v0.3.0-local/TERMS.md"
+    "supportURL": "https://github.com/samihalawa/licita-espana/blob/main/SUPPORT.md",
+    "privacyPolicyURL": "https://github.com/samihalawa/licita-espana/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md"
   },
   "name": "licita-espana",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.",
   "author": {
     "name": "Sami Halawa",
@@ -35,7 +35,5 @@
   ],
   "license": "MIT",
   "skills": "./skills",
-  "homepage": "https://samihalawa.github.io/licita-espana/",
-  "requires_local_executor": true,
-  "mcpServers": "./mcp.json"
+  "homepage": "https://samihalawa.github.io/licita-espana/"
 }

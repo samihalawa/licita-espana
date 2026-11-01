@@ -1,5 +1,7 @@
 # Licita España
 
+Documento histórico conservado. La versión 0.5.0 aporta instrucciones; leer esta muestra no ejecuta ni actualiza la consulta original.
+
 Decide qué licitación merece tu tiempo.
 
 > EJEMPLO GUARDADO · no es una consulta en tiempo real
