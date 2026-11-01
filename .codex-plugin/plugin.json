@@ -35,5 +35,12 @@
   ],
   "license": "MIT",
   "skills": "./skills",
-  "homepage": "https://samihalawa.github.io/licita-espana/"
+  "homepage": "https://samihalawa.github.io/licita-espana/",
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
+      }
+    }
+  }
 }
