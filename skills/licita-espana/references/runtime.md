@@ -1,4 +1,4 @@
-# Acceso al conector — Licita España 0.6.0
+# Acceso al conector — Licita España 0.6.2
 
 Endpoint MCP Streamable HTTP: `https://aiplugins.megawebs.com/mcp/licita-espana`. Herramienta: `find_spanish_public_tenders`. Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.
 

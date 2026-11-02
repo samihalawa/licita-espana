@@ -9,7 +9,7 @@ Decide qué licitación merece tu tiempo. Encuentra licitaciones y convierte sus
 
 ## Cómo trabajar
 
-Esta edición 0.6.0 incluye el conector MCP alojado `find_spanish_public_tenders` en `https://aiplugins.megawebs.com/mcp/licita-espana`. Úsalo para su consulta pública de solo lectura: Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación. Aplica después las instrucciones para interpretar resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. Envía solo argumentos públicos mínimos, nunca conversaciones completas, documentos privados ni credenciales.
+Esta edición 0.6.2 incluye el conector MCP alojado `find_spanish_public_tenders` en `https://aiplugins.megawebs.com/mcp/licita-espana`. Úsalo para su consulta pública de solo lectura: Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación. Aplica después las instrucciones para interpretar resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. Envía solo argumentos públicos mínimos, nunca conversaciones completas, documentos privados ni credenciales.
 
 Busca en PLACSP y en el perfil oficial las oportunidades pertinentes; contrasta anuncio, pliegos, lotes y correcciones antes de recomendar una decisión.
 

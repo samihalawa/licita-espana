@@ -24,7 +24,7 @@
   ],
   "limits": "La cobertura depende de las páginas y documentos realmente revisados; no se garantiza incluir todas las licitaciones españolas. Una actualización reciente o una fecha futura no acredita un procedimiento abierto. No firma ni presenta ofertas.",
   "slug": "licita-espana",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real.",
   "mode": "hosted-read-only-mcp-with-guidance"
 }

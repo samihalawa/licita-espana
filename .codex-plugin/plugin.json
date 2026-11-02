@@ -12,13 +12,13 @@
     ],
     "logo": "./assets/logo.png",
     "composerIcon": "./assets/icon.png",
-    "websiteURL": "https://samihalawa.github.io/licita-espana/",
-    "supportURL": "https://github.com/samihalawa/licita-espana/blob/main/SUPPORT.md",
-    "privacyPolicyURL": "https://github.com/samihalawa/licita-espana/blob/main/PRIVACY.md",
-    "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md"
+    "websiteURL": "https://aiplugins.megawebs.com/plugins/licita-espana",
+    "supportURL": "https://aiplugins.megawebs.com/plugins/licita-espana/support",
+    "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/licita-espana/privacy",
+    "termsOfServiceURL": "https://aiplugins.megawebs.com/plugins/licita-espana/terms"
   },
   "name": "licita-espana",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
   "author": {
     "name": "Sami Halawa",
@@ -35,7 +35,7 @@
   ],
   "license": "MIT",
   "skills": "./skills",
-  "homepage": "https://samihalawa.github.io/licita-espana/",
+  "homepage": "https://aiplugins.megawebs.com/plugins/licita-espana",
   "extensions": {
     "com.openai": {
       "review": {

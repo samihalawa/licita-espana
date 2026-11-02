@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "licita-espana",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
   "author": {
     "name": "Sami Halawa",
@@ -32,10 +32,10 @@
         ],
         "logo": "./assets/logo.png",
         "composerIcon": "./assets/icon.png",
-        "websiteURL": "https://samihalawa.github.io/licita-espana/",
-        "supportURL": "https://github.com/samihalawa/licita-espana/blob/main/SUPPORT.md",
-        "privacyPolicyURL": "https://github.com/samihalawa/licita-espana/blob/main/PRIVACY.md",
-        "termsOfServiceURL": "https://github.com/samihalawa/licita-espana/blob/main/TERMS.md"
+        "websiteURL": "https://aiplugins.megawebs.com/plugins/licita-espana",
+        "supportURL": "https://aiplugins.megawebs.com/plugins/licita-espana/support",
+        "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/licita-espana/privacy",
+        "termsOfServiceURL": "https://aiplugins.megawebs.com/plugins/licita-espana/terms"
       },
       "review": {
         "prompts": [
@@ -96,7 +96,7 @@
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "0.6.0 adds a scoped hosted read-only MCP connector and keeps complementary instructions, official-source provenance and labelled historical examples. Earlier 0.5.0 instruction-only history is preserved. No local runtime is installed.",
+        "release_notes": "0.6.2 moves product, privacy, terms and support pages to the unified Megawebs Plugins website. The hosted read-only tools and their behavior are unchanged.",
         "translations": {
           "es-ES": {
             "subtitle": "Licitaciones con criterio",
@@ -106,6 +106,6 @@
       }
     }
   },
-  "homepage": "https://samihalawa.github.io/licita-espana/",
+  "homepage": "https://aiplugins.megawebs.com/plugins/licita-espana",
   "repository": "https://github.com/samihalawa/licita-espana"
 }
