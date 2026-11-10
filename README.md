@@ -1,19 +1,22 @@
-![Icono de Licita España](assets/icon.png)
-
 # Licita España
 
 Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.
 
-**Versión 0.6.2 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.3 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 
+```bash
+/plugin install licita-espana --marketplace samihalawa/2026-MASTER-Marketplace-Plugins-Connectors-etc
+```
+
+
 Instala el paquete en un anfitrión compatible con plugins y MCP remoto. La configuración incluida conecta `https://aiplugins.megawebs.com/mcp/licita-espana` mediante Streamable HTTP y expone `find_spanish_public_tenders`. No necesitas Python local, instalar dependencias ni proporcionar una clave del editor. La disponibilidad de la conexión depende del anfitrión y de la fuente pública.
 
-> Busca licitaciones de software con una página y seis resultados como máximo.
+> Busca licitaciones de servicios en una página de PLACSP y devuelve hasta dos resultados con sus enlaces.
 
-- Busca formación en el feed de PLACSP y muestra qué páginas se revisaron.
-- Busca software por CPV 72 y devuelve cinco resultados como máximo.
+- Busca licitaciones de obras con prefijo CPV 45 en PLACSP y devuelve como máximo dos resultados.
+- Busca consultoría en hasta dos páginas de PLACSP. Indica la cobertura y cómo continuar.
 
 Lee [la habilidad](skills/licita-espana/SKILL.md) para el procedimiento, [las fuentes](skills/licita-espana/references/sources.md) y [el contrato de acceso](skills/licita-espana/references/runtime.md). La herramienta realiza la consulta acotada descrita; la lectura de documentos, interpretación y creación de archivos usan capacidades adicionales del anfitrión. Conserva los identificadores, enlaces, fechas y límites realmente devueltos.
 

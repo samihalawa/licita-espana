@@ -1,7 +1,7 @@
 {
   "name": "licita-espana",
   "displayName": "Licita España",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
   "author": {
     "name": "Sami Halawa",

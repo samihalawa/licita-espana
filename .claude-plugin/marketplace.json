@@ -13,7 +13,7 @@
       "name": "licita-espana",
       "source": "./",
       "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
-      "version": "0.6.2"
+      "version": "0.6.3"
     }
   ]
 }

@@ -1,14 +1,15 @@
 {
   "interface": {
     "displayName": "Licita España",
-    "shortDescription": "Triage Spanish public tenders",
-    "longDescription": "Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
+    "shortDescription": "Find Spanish public tenders",
+    "longDescription": "Search a bounded window of Spain’s public procurement feed (PLACSP) by keyword, CPV prefix or a minimum deadline date. Review returned tender references, published deadlines, budgets and official links. See how much of the feed was checked and where to continue.",
     "developerName": "Sami Halawa",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "Find recent Spanish software tenders and show exactly what was searched.",
-      "Review these tender documents and quote the clauses that determine eligibility."
+      "Busca licitaciones de servicios en una página de PLACSP y devuelve hasta dos resultados con sus enlaces.",
+      "Busca licitaciones de obras con prefijo CPV 45 en PLACSP y devuelve como máximo dos resultados.",
+      "Busca consultoría en hasta dos páginas de PLACSP. Indica la cobertura y cómo continuar."
     ],
     "logo": "./assets/logo.png",
     "composerIcon": "./assets/icon.png",
@@ -18,7 +19,7 @@
     "termsOfServiceURL": "https://aiplugins.megawebs.com/plugins/licita-espana/terms"
   },
   "name": "licita-espana",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
   "author": {
     "name": "Sami Halawa",

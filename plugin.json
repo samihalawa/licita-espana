@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "licita-espana",
-  "version": "0.6.2",
-  "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
+  "version": "0.6.3",
+  "description": "Consulta una ventana acotada del feed oficial PLACSP por t\u00e9rminos, CPV y plazo; devuelve enlaces, cobertura y continuaci\u00f3n.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -20,15 +20,16 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Licita España",
-        "shortDescription": "Triage Spanish public tenders",
-        "longDescription": "Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
+        "displayName": "Licita Espa\u00f1a",
+        "shortDescription": "Find Spanish public tenders",
+        "longDescription": "Search a bounded window of Spain\u2019s public procurement feed (PLACSP) by keyword, CPV prefix or a minimum deadline date. Review returned tender references, published deadlines, budgets and official links. See how much of the feed was checked and where to continue.",
         "developerName": "Sami Halawa",
         "category": "Productivity",
         "capabilities": [],
         "defaultPrompt": [
-          "Find recent Spanish software tenders and show exactly what was searched.",
-          "Review these tender documents and quote the clauses that determine eligibility."
+          "Busca licitaciones de servicios en una p\u00e1gina de PLACSP y devuelve hasta dos resultados con sus enlaces.",
+          "Busca licitaciones de obras con prefijo CPV 45 en PLACSP y devuelve como m\u00e1ximo dos resultados.",
+          "Busca consultor\u00eda en hasta dos p\u00e1ginas de PLACSP. Indica la cobertura y c\u00f3mo continuar."
         ],
         "logo": "./assets/logo.png",
         "composerIcon": "./assets/icon.png",
@@ -39,68 +40,68 @@
       },
       "review": {
         "prompts": [
-          "Busca licitaciones de software con una página y seis resultados como máximo.",
-          "Busca formación en el feed de PLACSP y muestra qué páginas se revisaron.",
-          "Busca software por CPV 72 y devuelve cinco resultados como máximo."
+          "Busca licitaciones de servicios en una p\u00e1gina de PLACSP y devuelve hasta dos resultados con sus enlaces.",
+          "Busca licitaciones de obras con prefijo CPV 45 en PLACSP y devuelve como m\u00e1ximo dos resultados.",
+          "Busca consultor\u00eda en hasta dos p\u00e1ginas de PLACSP. Indica la cobertura y c\u00f3mo continuar."
         ],
         "commerce": false,
         "commerce_description": "Read-only official-source queries and assistant guidance; no checkout, payment or purchase functionality.",
         "test_cases": {
           "positive": [
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 1.",
-              "prompt": "Busca licitaciones de software con una página y seis resultados como máximo.",
+              "description": "Find service tenders in one feed page",
+              "prompt": "Busca licitaciones de servicios en una p\u00e1gina de PLACSP y devuelve hasta dos resultados con sus enlaces.",
               "tools_triggered": "find_spanish_public_tenders",
-              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+              "expected_behavior": "Return at most two matching records from one checked page with tender references, published deadlines and official links when available. If the source fails or coverage is partial, explain what could be checked."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 2.",
-              "prompt": "Busca formación en el feed de PLACSP y muestra qué páginas se revisaron.",
+              "description": "Apply a works CPV prefix",
+              "prompt": "Busca licitaciones de obras con prefijo CPV 45 en PLACSP y devuelve como m\u00e1ximo dos resultados.",
               "tools_triggered": "find_spanish_public_tenders",
-              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+              "expected_behavior": "Return up to two records that meet the CPV filter. Preserve the reported CPV codes, official links and search coverage. If the source fails or coverage is partial, explain what could be checked."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 3.",
-              "prompt": "Busca software por CPV 72 y devuelve cinco resultados como máximo.",
+              "description": "Report continuation after two feed pages",
+              "prompt": "Busca consultor\u00eda en hasta dos p\u00e1ginas de PLACSP. Indica la cobertura y c\u00f3mo continuar.",
               "tools_triggered": "find_spanish_public_tenders",
-              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+              "expected_behavior": "State how many feed pages were checked and distinguish reaching the end from a page cap or source interruption. Include the returned continuation when available. If the source fails or coverage is partial, explain what could be checked."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 4.",
-              "prompt": "Consulta dos páginas de PLACSP sobre consultoría y explica la continuación pendiente.",
+              "description": "Filter on published deadline",
+              "prompt": "Busca hasta tres licitaciones de servicios con plazo desde el 1 de noviembre de 2026 y cita los enlaces oficiales.",
               "tools_triggered": "find_spanish_public_tenders",
-              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+              "expected_behavior": "Apply the date filter and give the published dates actually returned. Explain that a published deadline does not establish current procedure status. If the source fails or coverage is partial, explain what could be checked."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 5.",
-              "prompt": "Busca software con plazo desde 2026-11-01 y conserva los enlaces oficiales.",
+              "description": "Explain a scoped zero-match result",
+              "prompt": "Busca \u00abteletransporte cu\u00e1ntico de dragones\u00bb en una p\u00e1gina de PLACSP y explica el alcance si no hay coincidencias.",
               "tools_triggered": "find_spanish_public_tenders",
-              "expected_behavior": "Call find_spanish_public_tenders using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Search a bounded official PLACSP tender-feed window by terms, CPV and deadline; return links, coverage and continuation."
+              "expected_behavior": "If no records match in the checked window, report that bounded outcome and the official source. Mention any returned continuation. If the source fails or coverage is partial, explain what could be checked."
             }
           ],
           "negative": [
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_public_tenders or claiming completion.",
-              "prompt": "Presenta una oferta firmada por mí."
+              "description": "A signed offer requires the official submission channel. Explain that this search tool cannot sign or file a bid. Do not call find_spanish_public_tenders for this request.",
+              "prompt": "Presenta una oferta firmada por m\u00ed."
             },
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_public_tenders or claiming completion.",
-              "prompt": "Garantiza que cumplo todos los requisitos de esta licitación."
+              "description": "Eligibility requires checking the governing documents and bidder facts. Explain that a feed record alone cannot establish compliance. Do not call find_spanish_public_tenders for this request.",
+              "prompt": "Garantiza que cumplo todos los requisitos de esta licitaci\u00f3n."
             },
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_public_tenders or claiming completion.",
-              "prompt": "Activa vigilancia automática y envíame alertas cada día."
+              "description": "This is a user-initiated feed lookup. Explain that it does not run scheduled monitoring or deliver automatic alerts. Do not call find_spanish_public_tenders for this request.",
+              "prompt": "Activa vigilancia autom\u00e1tica y env\u00edame alertas cada d\u00eda."
             }
           ]
         },
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "0.6.2 moves product, privacy, terms and support pages to the unified Megawebs Plugins website. The hosted read-only tools and their behavior are unchanged.",
+        "release_notes": "Adds review cases for keyword and CPV searches, deadline filters and feed continuation.",
         "translations": {
           "es-ES": {
             "subtitle": "Licitaciones con criterio",
-            "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.\n\nConector MCP alojado para consultas públicas de solo lectura, con instrucciones complementarias para revisar fuentes y documentos. Conserva fechas, identificadores, enlaces y límites. No requiere Python local ni claves del editor. No presenta trámites, firma, compra, accede a datos protegidos ni activa vigilancia. Los ejemplos guardados son históricos."
+            "description": "Busca en una ventana acotada del feed de contrataci\u00f3n p\u00fablica PLACSP por t\u00e9rmino, prefijo CPV o fecha m\u00ednima de plazo. Consulta referencias, plazos, presupuestos y enlaces publicados. Comprueba qu\u00e9 parte del feed se examin\u00f3 y c\u00f3mo continuar."
           }
         }
       }
