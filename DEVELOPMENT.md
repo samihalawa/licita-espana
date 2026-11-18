@@ -1,4 +1,4 @@
-# Desarrollo — Licita España 0.6.2
+# Desarrollo — Spain Tenders & Contracts 0.6.4
 
 El paquete configura un MCP remoto Streamable HTTP; no contiene un servidor Python local. Contrato: `find_spanish_public_tenders` en `https://aiplugins.megawebs.com/mcp/licita-espana`. El servidor compartido se mantiene en `connectors/spain-assistant-mcp-apps` del repositorio privado maestro.
 

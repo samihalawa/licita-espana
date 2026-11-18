@@ -1,5 +1,10 @@
 # Historial de versiones
 
+## 0.6.4
+
+- Presenta el producto como Spain Tenders & Contracts con descripciones de tareas y ejemplos en español e inglés.
+- Alinea la ficha, los manifiestos compatibles y las instrucciones de selección; conserva identidad técnica, herramientas y cobertura.
+
 ## 0.6.3
 
 - Precisa los ejemplos de búsqueda y los resultados esperados para la revisión.

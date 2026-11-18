@@ -1,21 +1,25 @@
 {
-  "name": "Licita España",
+  "name": "Spain Tenders & Contracts",
   "promise": "Decide qué licitación merece tu tiempo.",
   "audience": "Autónomos, pymes y consultoras que preparan ofertas públicas.",
-  "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
-  "short": "Licitaciones con criterio",
+  "description": "Find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation.",
+  "short": "Licitaciones y contratos",
   "source": "PLACSP",
   "keywords": [
+    "spain",
+    "tenders",
+    "public contracts",
+    "procurement",
     "licitaciones",
-    "contratacion-publica",
-    "placsp",
-    "pymes",
-    "cpv"
+    "contratación pública",
+    "concursos",
+    "PLACSP",
+    "CPV"
   ],
   "prompts": [
-    "Busca licitaciones de software y separa los plazos futuros de los ya vencidos.",
-    "Revisa estos pliegos y señala los requisitos, las pruebas que faltan y las cláusulas.",
-    "Enséñame un ejemplo antes de consultar datos actuales."
+    "Find Spanish software tenders and show published budgets, deadlines and official links.",
+    "Busca licitaciones públicas de formación y muestra el alcance de la búsqueda.",
+    "Busca contratos públicos por CPV 72 y enlaza los expedientes oficiales."
   ],
   "benefits": [
     "Expediente, organismo, presupuesto y plazo con fuentes oficiales.",
@@ -24,7 +28,7 @@
   ],
   "limits": "La cobertura depende de las páginas y documentos realmente revisados; no se garantiza incluir todas las licitaciones españolas. Una actualización reciente o una fecha futura no acredita un procedimiento abierto. No firma ni presenta ofertas.",
   "slug": "licita-espana",
-  "version": "0.6.2",
+  "version": "0.6.4",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real.",
   "mode": "hosted-read-only-mcp-with-guidance"
 }

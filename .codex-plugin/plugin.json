@@ -1,15 +1,15 @@
 {
   "interface": {
-    "displayName": "Licita España",
-    "shortDescription": "Find Spanish public tenders",
-    "longDescription": "Search a bounded window of Spain’s public procurement feed (PLACSP) by keyword, CPV prefix or a minimum deadline date. Review returned tender references, published deadlines, budgets and official links. See how much of the feed was checked and where to continue.",
+    "displayName": "Spain Tenders & Contracts",
+    "shortDescription": "Find public tender notices",
+    "longDescription": "Find public tenders and procurement opportunities in Spain. Search an inspected window of the official PLACSP feed by keyword, CPV prefix or minimum deadline date. Compare returned tender titles, contracting bodies, budgets and published deadlines, with direct links to the official records. Continue through the feed using the returned cursor and coverage details. Useful for finding notices and choosing which tender documents to examine. The feed window is not an exhaustive search of every Spanish tender, and a future deadline alone does not confirm a procedure is open. The connector does not sign or submit bids.",
     "developerName": "Sami Halawa",
-    "category": "Productivity",
+    "category": "Business & Operations",
     "capabilities": [],
     "defaultPrompt": [
-      "Busca licitaciones de servicios en una página de PLACSP y devuelve hasta dos resultados con sus enlaces.",
-      "Busca licitaciones de obras con prefijo CPV 45 en PLACSP y devuelve como máximo dos resultados.",
-      "Busca consultoría en hasta dos páginas de PLACSP. Indica la cobertura y cómo continuar."
+      "Find Spanish software tenders and show published budgets, deadlines and official links.",
+      "Busca licitaciones públicas de formación y muestra el alcance de la búsqueda.",
+      "Busca contratos públicos por CPV 72 y enlaza los expedientes oficiales."
     ],
     "logo": "./assets/logo.png",
     "composerIcon": "./assets/icon.png",
@@ -19,20 +19,22 @@
     "termsOfServiceURL": "https://aiplugins.megawebs.com/plugins/licita-espana/terms"
   },
   "name": "licita-espana",
-  "version": "0.6.3",
-  "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
+  "version": "0.6.4",
+  "description": "Find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
   },
   "keywords": [
     "spain",
-    "claude-plugin",
+    "tenders",
+    "public contracts",
+    "procurement",
     "licitaciones",
-    "contratacion-publica",
-    "placsp",
-    "pymes",
-    "cpv"
+    "contratación pública",
+    "concursos",
+    "PLACSP",
+    "CPV"
   ],
   "license": "MIT",
   "skills": "./skills",

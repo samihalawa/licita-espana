@@ -1,8 +1,8 @@
 {
   "name": "licita-espana",
-  "displayName": "Licita España",
-  "version": "0.6.3",
-  "description": "Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación.",
+  "displayName": "Spain Tenders & Contracts",
+  "version": "0.6.4",
+  "description": "Find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,11 +10,14 @@
   "license": "MIT",
   "keywords": [
     "spain",
+    "tenders",
+    "public contracts",
+    "procurement",
     "licitaciones",
-    "contratacion-publica",
-    "placsp",
-    "pymes",
-    "cpv"
+    "contratación pública",
+    "concursos",
+    "PLACSP",
+    "CPV"
   ],
   "homepage": "https://aiplugins.megawebs.com/plugins/licita-espana",
   "repository": "https://github.com/samihalawa/licita-espana",

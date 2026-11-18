@@ -1,4 +1,4 @@
-# Ejemplo histórico y escenarios de revisión
+# Ejemplos históricos y escenarios — Spain Tenders & Contracts
 
 El archivo references/demo.json conserva una captura de 20 de octubre de 2026 de una ventana acotada de PLACSP. Lee captured_at, fuentes, cobertura y avisos como documentación histórica. Las fechas, estados y continuaciones guardados no describen oportunidades actuales ni un mecanismo de consulta de esta versión.
 

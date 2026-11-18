@@ -1,4 +1,4 @@
-# Revisión — Licita España 0.6.3
+# Revisión — Spain Tenders & Contracts 0.6.4
 
 Paquete remoto con una herramienta: `find_spanish_public_tenders` en `https://aiplugins.megawebs.com/mcp/licita-espana`. Casos: cinco positivos y tres negativos en `plugin.json`. Las variantes cubren entradas o límites distintos; las fuentes dinámicas pueden devolver errores o cobertura parcial, que deben declararse sin fabricar resultados.
 
