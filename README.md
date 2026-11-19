@@ -1,22 +1,21 @@
 # Spain Tenders & Contracts
 
-Find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation.
+Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.
 
-**Versión 0.6.4 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.5 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 
-```bash
-/plugin install licita-espana --marketplace samihalawa/2026-MASTER-Marketplace-Plugins-Connectors-etc
-```
+Instalación y conexión: [abrir la página del producto](https://aiplugins.megawebs.com/plugins/licita-espana). Elige allí las instrucciones del anfitrión que utilices.
 
 
 Instala el paquete en un anfitrión compatible con plugins y MCP remoto. La configuración incluida conecta `https://aiplugins.megawebs.com/mcp/licita-espana` mediante Streamable HTTP y expone `find_spanish_public_tenders`. No necesitas Python local, instalar dependencias ni proporcionar una clave del editor. La disponibilidad de la conexión depende del anfitrión y de la fuente pública.
 
-> Busca licitaciones de servicios en una página de PLACSP y devuelve hasta dos resultados con sus enlaces.
+> Busca licitaciones de software en España y compara presupuesto, plazo publicado y enlace oficial.
 
-- Busca licitaciones de obras con prefijo CPV 45 en PLACSP y devuelve como máximo dos resultados.
-- Busca consultoría en hasta dos páginas de PLACSP. Indica la cobertura y cómo continuar.
+- Find Spanish training tenders and show which feed pages were checked.
+- Busca contratos públicos con CPV 72 y distingue oportunidades de anuncios históricos.
+
 
 Lee [la habilidad](skills/licita-espana/SKILL.md) para el procedimiento, [las fuentes](skills/licita-espana/references/sources.md) y [el contrato de acceso](skills/licita-espana/references/runtime.md). La herramienta realiza la consulta acotada descrita; la lectura de documentos, interpretación y creación de archivos usan capacidades adicionales del anfitrión. Conserva los identificadores, enlaces, fechas y límites realmente devueltos.
 

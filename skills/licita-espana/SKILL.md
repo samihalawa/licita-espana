@@ -1,15 +1,20 @@
 ---
 name: licita-espana
-description: "Use when the user wants to find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation."
+description: "Use when the user wants to find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links."
 ---
 
 # Spain Tenders & Contracts
 
-Decide qué licitación merece tu tiempo. Encuentra licitaciones y convierte sus pliegos en una decisión documentada: requisitos, plazos y próximos pasos.
+Encuentra licitaciones de España para revisar con tu equipo. Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.
+## Primera consulta y resultado útil
+
+Consulta el tema o CPV ya aportado sin pedir de entrada datos fiscales o un perfil de solvencia. Devuelve una primera comparación de los anuncios encontrados; revisa pliegos y requisitos con las capacidades del anfitrión cuando la petición lo requiera. Usa la continuación devuelta para ampliar la búsqueda, sin afirmar cobertura nacional completa. Usa la herramienta MCP para su consulta soportada; si su respuesta ya resuelve la petición, no repitas esa búsqueda en el navegador. Abre documentos adicionales solo cuando la pregunta o una laguna material lo requieran. Reutiliza el contexto; pregunta solo por un dato esencial que no puedas resolver con la información o fuentes disponibles.
+
+Entrega primero la respuesta o comparación que pidió el usuario, con una tabla breve cuando ayude. Conserva enlaces oficiales, fechas, identificadores y unidades relevantes; explica los límites que cambien la interpretación junto al dato afectado. El resultado debe poder reutilizarse desde la conversación, sin publicidad, llamadas a contratar ni recomendaciones ajenas a la tarea. Propón una continuación solo cuando ayude a resolver la petición; no actives alertas, seguimiento ni funciones que no se hayan ejecutado.
 
 ## Cómo trabajar
 
-Esta edición 0.6.4 incluye el conector MCP alojado `find_spanish_public_tenders` en `https://aiplugins.megawebs.com/mcp/licita-espana`. Úsalo para su consulta pública de solo lectura: Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación. Aplica después las instrucciones para interpretar resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. Envía solo argumentos públicos mínimos, nunca conversaciones completas, documentos privados ni credenciales.
+Esta edición 0.6.5 incluye el conector MCP alojado `find_spanish_public_tenders` en `https://aiplugins.megawebs.com/mcp/licita-espana`. Úsalo para su consulta pública de solo lectura: Consulta una ventana acotada del feed oficial PLACSP por términos, CPV y plazo; devuelve enlaces, cobertura y continuación. Aplica después las instrucciones para interpretar resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. Envía solo argumentos públicos mínimos, nunca conversaciones completas, documentos privados ni credenciales.
 
 Busca en PLACSP y en el perfil oficial las oportunidades pertinentes; contrasta anuncio, pliegos, lotes y correcciones antes de recomendar una decisión.
 

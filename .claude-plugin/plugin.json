@@ -1,8 +1,8 @@
 {
   "name": "licita-espana",
   "displayName": "Spain Tenders & Contracts",
-  "version": "0.6.4",
-  "description": "Find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation.",
+  "version": "0.6.5",
+  "description": "Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,6 +10,8 @@
   "license": "MIT",
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "tenders",
     "public contracts",
     "procurement",

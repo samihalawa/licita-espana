@@ -5,15 +5,15 @@
     "email": "sami@samihalawa.com"
   },
   "metadata": {
-    "description": "Find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation.",
-    "version": "0.6.4"
+    "description": "Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.",
+    "version": "0.6.5"
   },
   "plugins": [
     {
       "name": "licita-espana",
       "source": "./",
-      "description": "Find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation.",
-      "version": "0.6.4"
+      "description": "Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.",
+      "version": "0.6.5"
     }
   ]
 }

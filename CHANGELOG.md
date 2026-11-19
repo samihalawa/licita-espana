@@ -1,5 +1,12 @@
 # Historial de versiones
 
+## 0.6.5
+
+- Mejora el descubrimiento en español e inglés, incluidos España y las tareas habituales del dominio.
+- Renueva ejemplos de inicio e instrucciones para obtener una respuesta útil con fuentes y contexto.
+- Conserva herramientas, identidad, endpoints y cobertura; no añade pagos, registro obligatorio ni seguimiento.
+
+
 ## 0.6.4
 
 - Presenta el producto como Spain Tenders & Contracts con descripciones de tareas y ejemplos en español e inglés.

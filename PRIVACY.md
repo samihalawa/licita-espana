@@ -1,4 +1,4 @@
-# Privacidad — Spain Tenders & Contracts 0.6.4
+# Privacidad — Spain Tenders & Contracts 0.6.5
 
 Editor y operador del conector: Sami Halawa. Contacto: sami@samihalawa.com.
 

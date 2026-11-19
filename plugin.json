@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "licita-espana",
-  "version": "0.6.4",
-  "description": "Find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation.",
+  "version": "0.6.5",
+  "description": "Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,6 +10,8 @@
   "license": "MIT",
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "tenders",
     "public contracts",
     "procurement",
@@ -23,15 +25,15 @@
     "com.openai": {
       "interface": {
         "displayName": "Spain Tenders & Contracts",
-        "shortDescription": "Find public tender notices",
-        "longDescription": "Find public tenders and procurement opportunities in Spain. Search an inspected window of the official PLACSP feed by keyword, CPV prefix or minimum deadline date. Compare returned tender titles, contracting bodies, budgets and published deadlines, with direct links to the official records. Continue through the feed using the returned cursor and coverage details. Useful for finding notices and choosing which tender documents to examine. The feed window is not an exhaustive search of every Spanish tender, and a future deadline alone does not confirm a procedure is open. The connector does not sign or submit bids.",
+        "shortDescription": "Spain tenders & contracts",
+        "longDescription": "Find public tenders and procurement opportunities in Spain (España) to review with your team. Search an inspected window of the PLACSP feed by topic, CPV prefix or minimum deadline. Compare returned titles, contracting bodies, budgets and published deadlines with direct official links, then continue using the returned feed coverage. A bounded feed search is not a complete national inventory, and a future deadline alone does not confirm a procedure is open. The connector does not confirm eligibility, sign or submit bids.",
         "developerName": "Sami Halawa",
         "category": "Business & Operations",
         "capabilities": [],
         "defaultPrompt": [
-          "Find Spanish software tenders and show published budgets, deadlines and official links.",
-          "Busca licitaciones públicas de formación y muestra el alcance de la búsqueda.",
-          "Busca contratos públicos por CPV 72 y enlaza los expedientes oficiales."
+          "Busca licitaciones de software en España y compara presupuesto, plazo publicado y enlace oficial.",
+          "Find Spanish training tenders and show which feed pages were checked.",
+          "Busca contratos públicos con CPV 72 y distingue oportunidades de anuncios históricos."
         ],
         "logo": "./assets/logo.png",
         "composerIcon": "./assets/icon.png",
@@ -79,6 +81,12 @@
               "prompt": "Busca «teletransporte cuántico de dragones» en una página de PLACSP y explica el alcance si no hay coincidencias.",
               "tools_triggered": "find_spanish_public_tenders",
               "expected_behavior": "If no records match in the checked window, report that bounded outcome and the official source. Mention any returned continuation. If the source fails or coverage is partial, explain what could be checked."
+            },
+            {
+              "description": "Recognize the user task without naming the plugin",
+              "prompt": "Quiero encontrar oportunidades para ofrecer servicios de formación a administraciones españolas. Busca anuncios y compara sus plazos publicados.",
+              "tools_triggered": "find_spanish_public_tenders",
+              "expected_behavior": "Use the domain tool for the supplied public inputs without asking for unrelated account or profile information. Answer the requested comparison with returned official links, dates, units and actual coverage. Distinguish partial or failed source access from no matches; do not claim an unsupported feature or current status."
             }
           ],
           "negative": [
@@ -99,10 +107,10 @@
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "Clearer task-based name, descriptions and examples for finding the right Spanish public records. Existing tools and source coverage are unchanged.",
+        "release_notes": "Improved Spanish and English discovery, first-use prompts and sourced result guidance across Spain utilities. No new data access, payment features or background monitoring.",
         "translations": {
           "es-ES": {
-            "subtitle": "Licitaciones y contratos",
+            "subtitle": "Licitaciones de España",
             "description": "Encuentra licitaciones y oportunidades de contratación pública en España. Busca en una ventana del feed oficial PLACSP por palabra clave, prefijo CPV o fecha mínima de plazo. Compara títulos, organismos, presupuestos y fechas publicadas, con enlaces a los expedientes oficiales. Continúa con el cursor y los datos de cobertura devueltos. Sirve para localizar anuncios y elegir los pliegos que revisar. La ventana no cubre todas las licitaciones españolas y una fecha futura no confirma por sí sola que el procedimiento esté abierto. El conector no firma ni presenta ofertas."
           }
         }

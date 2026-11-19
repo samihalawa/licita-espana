@@ -1,5 +1,5 @@
 {
-  "version": "0.6.4",
+  "version": "0.6.5",
   "endpoint": "https://aiplugins.megawebs.com/mcp/licita-espana",
   "scope": "Specification of positive inputs and expected behavior, and unsupported negative requests. This JSON defines cases and is not an execution log. Direct MCP calls and the SDK demo verify tool behavior; the demo does not test assistant routing. Actual native assistant test evidence is retained in the native release records.",
   "positive": [
@@ -55,6 +55,17 @@
         "max_pages": 1
       },
       "expected_behavior": "If no records match in the checked window, report that bounded outcome and the official source. Mention any returned continuation. If the source fails or coverage is partial, explain what could be checked."
+    },
+    {
+      "id": "positive-indirect",
+      "prompt": "Quiero encontrar oportunidades para ofrecer servicios de formación a administraciones españolas. Busca anuncios y compara sus plazos publicados.",
+      "tool": "find_spanish_public_tenders",
+      "arguments": {
+        "query": "formación",
+        "max_pages": 1,
+        "limit": 6
+      },
+      "expected_behavior": "Use the domain tool for the supplied public inputs without asking for unrelated account or profile information. Answer the requested comparison with returned official links, dates, units and actual coverage. Distinguish partial or failed source access from no matches; do not claim an unsupported feature or current status."
     }
   ],
   "negative": [

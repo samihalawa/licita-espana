@@ -1,12 +1,14 @@
 {
   "name": "Spain Tenders & Contracts",
-  "promise": "Decide qué licitación merece tu tiempo.",
+  "promise": "Encuentra licitaciones de España para revisar con tu equipo.",
   "audience": "Autónomos, pymes y consultoras que preparan ofertas públicas.",
-  "description": "Find Spanish public tenders and procurement notices (licitaciones y contratación pública) in PLACSP by keyword, CPV and deadline. Return official links, budgets, dates and feed continuation.",
-  "short": "Licitaciones y contratos",
+  "description": "Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.",
+  "short": "Licitaciones de España",
   "source": "PLACSP",
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "tenders",
     "public contracts",
     "procurement",
@@ -17,18 +19,18 @@
     "CPV"
   ],
   "prompts": [
-    "Find Spanish software tenders and show published budgets, deadlines and official links.",
-    "Busca licitaciones públicas de formación y muestra el alcance de la búsqueda.",
-    "Busca contratos públicos por CPV 72 y enlaza los expedientes oficiales."
+    "Busca licitaciones de software en España y compara presupuesto, plazo publicado y enlace oficial.",
+    "Find Spanish training tenders and show which feed pages were checked.",
+    "Busca contratos públicos con CPV 72 y distingue oportunidades de anuncios históricos."
   ],
   "benefits": [
-    "Expediente, organismo, presupuesto y plazo con fuentes oficiales.",
-    "Búsqueda con alcance y partes pendientes explícitos.",
-    "Matriz de requisitos con cláusula, evidencia del usuario y próximo paso."
+    "Anuncios con expediente, organismo, presupuesto y plazo cuando consten.",
+    "Comparación breve para elegir qué documentos oficiales revisar.",
+    "Cobertura y continuación explícitas del feed consultado."
   ],
   "limits": "La cobertura depende de las páginas y documentos realmente revisados; no se garantiza incluir todas las licitaciones españolas. Una actualización reciente o una fecha futura no acredita un procedimiento abierto. No firma ni presenta ofertas.",
   "slug": "licita-espana",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real.",
   "mode": "hosted-read-only-mcp-with-guidance"
 }
