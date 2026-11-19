@@ -1,6 +1,6 @@
 # Spain Tenders & Contracts — ejemplo histórico
 
-Muestra histórica conservada de una edición anterior, incluida como referencia en Spain Tenders & Contracts 0.6.5. Leerla no ejecuta ni actualiza la consulta original.
+Muestra histórica conservada de una edición anterior, incluida como referencia en Spain Tenders & Contracts 0.6.6. Leerla no ejecuta ni actualiza la consulta original.
 
 Decide qué licitación merece tu tiempo.
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "licita-espana",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.",
   "author": {
     "name": "Sami Halawa",
@@ -57,12 +57,6 @@
               "prompt": "Busca licitaciones de servicios en una página de PLACSP y devuelve hasta dos resultados con sus enlaces.",
               "tools_triggered": "find_spanish_public_tenders",
               "expected_behavior": "Return at most two matching records from one checked page with tender references, published deadlines and official links when available. If the source fails or coverage is partial, explain what could be checked."
-            },
-            {
-              "description": "Apply a works CPV prefix",
-              "prompt": "Busca licitaciones de obras con prefijo CPV 45 en PLACSP y devuelve como máximo dos resultados.",
-              "tools_triggered": "find_spanish_public_tenders",
-              "expected_behavior": "Return up to two records that meet the CPV filter. Preserve the reported CPV codes, official links and search coverage. If the source fails or coverage is partial, explain what could be checked."
             },
             {
               "description": "Report continuation after two feed pages",

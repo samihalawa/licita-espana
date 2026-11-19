@@ -2,7 +2,7 @@
 
 Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.
 
-**Versión 0.6.5 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.6 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 

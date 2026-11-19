@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.",
-    "version": "0.6.5"
+    "version": "0.6.6"
   },
   "plugins": [
     {
       "name": "licita-espana",
       "source": "./",
       "description": "Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.",
-      "version": "0.6.5"
+      "version": "0.6.6"
     }
   ]
 }

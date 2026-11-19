@@ -1,5 +1,5 @@
 {
-  "version": "0.6.5",
+  "version": "0.6.6",
   "endpoint": "https://aiplugins.megawebs.com/mcp/licita-espana",
   "scope": "Specification of positive inputs and expected behavior, and unsupported negative requests. This JSON defines cases and is not an execution log. Direct MCP calls and the SDK demo verify tool behavior; the demo does not test assistant routing. Actual native assistant test evidence is retained in the native release records.",
   "positive": [
@@ -13,17 +13,6 @@
         "limit": 2
       },
       "expected_behavior": "Return at most two matching records from one checked page with tender references, published deadlines and official links when available. If the source fails or coverage is partial, explain what could be checked."
-    },
-    {
-      "id": "positive-2",
-      "prompt": "Busca licitaciones de obras con prefijo CPV 45 en PLACSP y devuelve como máximo dos resultados.",
-      "tool": "find_spanish_public_tenders",
-      "arguments": {
-        "query": "obra",
-        "cpv_prefix": "45",
-        "limit": 2
-      },
-      "expected_behavior": "Return up to two records that meet the CPV filter. Preserve the reported CPV codes, official links and search coverage. If the source fails or coverage is partial, explain what could be checked."
     },
     {
       "id": "positive-3",

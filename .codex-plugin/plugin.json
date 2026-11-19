@@ -19,7 +19,7 @@
     "termsOfServiceURL": "https://aiplugins.megawebs.com/plugins/licita-espana/terms"
   },
   "name": "licita-espana",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.",
   "author": {
     "name": "Sami Halawa",

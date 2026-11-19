@@ -2,7 +2,7 @@
 
 Find public tenders and procurement notices in Spain (licitaciones y contratos públicos de España). Search PLACSP by topic, CPV and deadline, with budgets and official links.
 
-Versión 0.6.5: `find_spanish_public_tenders` mediante MCP remoto alojado, complementado por instrucciones para revisar fuentes y documentos. No requiere Python local ni claves del editor. La cobertura y la vigencia se verifican por consulta; las capturas incluidas son históricas. Los textos de ficha y sus traducciones canónicos están en `plugin.json`. No implica afiliación oficial ni aprobación en un directorio.
+Versión 0.6.6: `find_spanish_public_tenders` mediante MCP remoto alojado, complementado por instrucciones para revisar fuentes y documentos. No requiere Python local ni claves del editor. La cobertura y la vigencia se verifican por consulta; las capturas incluidas son históricas. Los textos de ficha y sus traducciones canónicos están en `plugin.json`. No implica afiliación oficial ni aprobación en un directorio.
 
 ## Descubrimiento y primera tarea
 
